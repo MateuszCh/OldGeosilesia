@@ -1,0 +1,17 @@
+header  {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: $header-color;
+  color: white;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: 0 3px 5px 1px darken($header-color, 20%);
+
+  .logo {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 200px;
+  }
+}

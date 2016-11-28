@@ -1,0 +1,24 @@
+.mainNav  {
+  display: none;
+  li  {
+    text-align: center;
+    .secondNav  {
+      padding: 10px 0;
+    }
+    a   {
+      font-family: $text-font;
+      display: block;
+      text-decoration: none;
+      &:visited {
+        color: inherit;
+      }
+    }
+  }
+  li:nth-of-type(n+1) {
+    padding: 5px 0;
+  }
+  .geoslaskNav  {
+    display: none;
+  }
+}
+
