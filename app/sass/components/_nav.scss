@@ -1,21 +1,24 @@
 .mainNav  {
   display: none;
-  li  {
-    text-align: center;
-    .secondNav  {
-      padding: 10px 0;
-    }
-    a   {
-      font-family: $text-font;
+  &>li  {
+    a,
+    span  {
+      cursor: pointer;
       display: block;
       text-decoration: none;
-      &:visited {
-        color: inherit;
-      }
+      font-family: $text-font;
+      color: inherit;
     }
-  }
-  li:nth-of-type(n+1) {
-    padding: 5px 0;
+    li a  {
+      padding-left: 1rem;
+      font-size: .9rem;
+    }
+    &>a,
+    span {
+      padding: .2rem 0;
+      padding-left: .5rem;
+      font-size: 1.2rem;
+    }
   }
   .geoslaskNav  {
     display: none;
