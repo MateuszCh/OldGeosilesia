@@ -28,7 +28,7 @@ function changeSize() {
     var currentSize = window.innerWidth;
     if(previousSize <= 768 && currentSize > 768){
         if(pierwszaLista.style.display){
-            $("#geoSlaskNav").slideUp(1);
+            $("#geoSlaskNav").slideUp(0);
             pierwszaLista.style.removeProperty("display");
         }
         if(drugaLista.style.display){

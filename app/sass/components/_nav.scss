@@ -67,14 +67,15 @@
     }
     li  {
       transition: all .2s ease-in-out;
-      &:hover   {
-        background-color: white;
-        color: darken($header-color, 10%);
-      }
+
       @include mq-not-mobile  {
         background-color: $header-color;
         padding: 5px 0;
         width: 100%;
+        &:hover   {
+          background-color: white;
+          color: darken($header-color, 10%);
+        }
       }
     }
   }
