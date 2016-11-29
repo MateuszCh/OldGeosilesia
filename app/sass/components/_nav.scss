@@ -1,6 +1,32 @@
 .mainNav  {
   display: none;
+  @include mq-not-mobile  {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: .7rem;
+  }
+  @include laptops  {
+    padding-right: 50px;
+    padding-bottom: 0;
+  }
   &>li  {
+    transition: all .4s ease-in-out;
+    @include mq-not-mobile  {
+      background-color: lighten($header-color, 10%);
+      //border-radius: 5%;
+      flex-grow: 1;
+      margin: 0 10px;
+      text-align: center;
+      &:hover {
+        background-color: white;
+        color: darken($header-color, 10%)
+      }
+    }
+
+    @include laptops  {
+      margin: 0 10px;
+    }
+
     a,
     span  {
       cursor: pointer;
@@ -18,10 +44,50 @@
       padding: .2rem 0;
       padding-left: .5rem;
       font-size: 1.2rem;
+      @include mq-not-mobile  {
+        padding: .5rem;
+      }
     }
   }
+
+  li:hover ul {
+
+    @include mq-not-mobile  {
+      display: block;
+    }
+
+
+  }
+
+  .parentGeoSlaskNav  {
+    @include mq-not-mobile  {
+      position: relative;
+    }
+  }
+
   .geoslaskNav  {
     display: none;
+
+    @include mq-not-mobile  {
+      position: absolute;
+      width: 200px;
+      background-color: $header-color;
+      color: white;
+    }
+
+    li  {
+      @include mq-not-mobile  {
+        padding: 5px 0;
+      }
+    }
+
+    li:hover  {
+      @include mq-not-mobile  {
+        background-color: white;
+        color: darken($header-color, 10%);
+      }
+    }
+
   }
 }
 

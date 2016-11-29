@@ -6,10 +6,21 @@ header  {
   color: white;
   box-shadow: 0 3px 5px 1px darken($header-color, 20%);
 
+  @include laptops  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   h1  {
     text-align: center;
     font-family: $headers-font;
     font-size: 3rem;
     margin: .5rem;
+    @include laptops  {
+      padding-left: 50px;
+      font-size: 5rem;
+    }
+
   }
 }

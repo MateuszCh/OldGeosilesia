@@ -4,11 +4,7 @@
   background-size: cover;
   background-position: 10%;
   background-repeat: no-repeat;
-  margin-top: 50px;
-
   @include mq-not-mobile  {
     background-position: center;
   }
-
-
 }
