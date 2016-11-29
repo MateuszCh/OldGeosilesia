@@ -41,7 +41,7 @@
   }
   .parentGeoSlaskNav  {
     &:hover ul  {
-      @include mq-not-mobile  {
+      @include laptops  {
         display: block;
       }
     }

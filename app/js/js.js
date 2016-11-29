@@ -5,14 +5,14 @@
 var previousSize = window.innerWidth;
 
 $("#logo").click(function () {
-    if(window.matchMedia('(max-width: 767px)').matches){
+    if(window.matchMedia('(max-width: 1199px)').matches){
         $("#mainNav").slideToggle(200);
-        $("#geoSlaskNav").slideUp(200);
+        $("#geoSlaskNav").slideUp(0);
     }
 });
 
 $("#secondNav").click(function () {
-    if(window.matchMedia('(max-width: 767px)').matches) {
+    if(window.matchMedia('(max-width: 1199px)').matches) {
         $("#geoSlaskNav").slideToggle(150);
     }
 });
@@ -26,7 +26,7 @@ var drugaLista = document.getElementById("geoSlaskNav");
 
 function changeSize() {
     var currentSize = window.innerWidth;
-    if(previousSize <= 768 && currentSize > 768){
+    if((previousSize <= 768 && currentSize > 768) || (previousSize <= 1200 && currentSize > 1200)){
         if(pierwszaLista.style.display){
             $("#geoSlaskNav").slideUp(0);
             pierwszaLista.style.removeProperty("display");
