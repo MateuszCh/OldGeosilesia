@@ -20,7 +20,6 @@
   .mainListItems  {
     transition: all .4s ease-in-out;
     @include mq-not-mobile  {
-      padding: 0 20px;
       background-color: lighten($header-color, 10%);
       flex-grow: 1;
       //margin: 0 10px;
@@ -36,7 +35,7 @@
       padding-left: .5rem;
       font-size: 1.2rem;
       @include mq-not-mobile  {
-        padding: .5rem;
+        padding: .5rem 28px;
       }
     }
   }

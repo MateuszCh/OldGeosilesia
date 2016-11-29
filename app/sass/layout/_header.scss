@@ -5,6 +5,7 @@ header  {
   background-color: $header-color;
   color: white;
   box-shadow: 0 3px 5px 1px darken($header-color, 20%);
+  z-index: 1000;
 
   @include laptops  {
     display: flex;
