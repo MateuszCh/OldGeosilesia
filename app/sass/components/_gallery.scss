@@ -36,7 +36,14 @@
     @include laptops  {
       //width: 65%;
     }
+
+    .figuryUp  {
+      transform: scale(1);
+    }
+
     figure  {
+
+
       position: relative;
       margin: 20px 0;
       overflow: hidden;
@@ -52,6 +59,8 @@
       }
 
       @include laptops  {
+        transform: scale(0);
+        transition: all .5s cubic-bezier(.17,.67,.83,.67);
         width: 14%;
         &:hover figcaption  {
           display: flex;

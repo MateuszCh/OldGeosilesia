@@ -1,3 +1,18 @@
+
+.mainNav li.active   {
+  background-color: lighten($header-color, 30%);
+  //color: darken($header-color, 10%)
+
+  ul li.active  {
+    background-color: lighten($header-color, 30%);
+    &:hover   {
+      background-color: white;
+    }
+  }
+}
+
+
+
 .mainNav  {
   display: none;
   @include mq-not-mobile  {
