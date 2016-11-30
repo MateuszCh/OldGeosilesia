@@ -1,0 +1,44 @@
+.aboutUs  {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 10px;
+
+  @include mq-not-mobile  {
+    width: 70%;
+    padding-top: 130px;
+  }
+  @include laptops  {
+    width: 60%;
+  }
+
+  p   {
+    margin-bottom: 15px;
+    font-family: $text-font;
+    color: #666;
+    line-height: 24px;
+    font-size: .9rem;
+  }
+
+  p:nth-child(11) {
+    border-bottom: 1px solid #666;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+  }
+  h2  {
+    width: 100%;
+    margin: 0 auto;
+    font-family: $headers-font;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    color: darken($header-color, 10%);
+    @include mq-not-mobile  {
+      font-size: 3rem;
+    }
+  }
+}
+
+body  {
+  background-color: #eee;
+}

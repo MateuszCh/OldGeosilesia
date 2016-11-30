@@ -83,10 +83,6 @@
         }
       }
       figcaption  {
-        //text-align: center;
-        //padding: 10px 0 0 0;
-        //font-family: $headers-font;
-        //color: white;
         padding: 10px 5px;
         display: flex;
         position: absolute;
@@ -103,21 +99,7 @@
         justify-content: center;
         transition: all .2s ease-in-out;
         @include laptops  {
-          padding: 10px 5px;
-          display: flex;
-          position: absolute;
-          color: white;
           background-color: rgba(darken($header-color, 5%),1);
-          z-index: 50;
-          bottom: 0;
-          left: 0;
-          right: 0;
-          text-align: center;
-          font-family: $headers-font;
-          font-size: 1rem;
-          align-items: center;
-          justify-content: center;
-          transition: all .2s ease-in-out;
           height: 36px;
         }
       }
