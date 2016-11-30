@@ -7,20 +7,64 @@ header  {
   box-shadow: 0 3px 5px 1px darken($header-color, 20%);
   z-index: 1000;
 
+  #menu {
+    cursor: pointer;
+    position: absolute;
+    top:30px;
+    right: 30px;
+    width: 25px;
+    height: 18px;
+  }
+
+  .menu {
+    height: 2px;
+    width: 25px;
+    background-color: white;
+    display: block;
+    @include mq-not-mobile  {
+      display: none;
+    }
+  }
+
+  .menu:after {
+    top: 7px;
+  }
+
+  .menu:after,
+  .menu:before  {
+    height: 2px;
+    width: 25px;
+    background-color: white;
+    position: absolute;
+    display: block;
+    content: "";
+  }
+
+  .menu:before {
+    top: 14px;
+  }
+
   @include laptops  {
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
 
-  h1  {
-    text-align: center;
-    font-family: $headers-font;
-    font-size: 3rem;
-    margin: .5rem;
-    @include laptops  {
-      font-size: 5rem;
+
+    h1  {
+      text-align: center;
+      font-family: $headers-font;
+      font-size: 3rem;
+      margin: .5rem;
+      @include laptops  {
+        font-size: 5rem;
+      }
+
+      a   {
+        color:white;
+        text-decoration: none;
+      }
     }
 
-  }
+
 }

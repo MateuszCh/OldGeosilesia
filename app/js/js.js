@@ -4,7 +4,7 @@
 
 var previousSize = window.innerWidth;
 
-$("#logo").click(function () {
+$("#menu").click(function () {
     if(window.matchMedia('(max-width: 1199px)').matches){
         $("#mainNav").slideToggle(200);
         $("#geoSlaskNav").slideUp(0);

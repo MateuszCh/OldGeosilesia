@@ -37,6 +37,9 @@
       @include mq-not-mobile  {
         padding: .5rem 28px;
       }
+      @include laptops  {
+        padding: 42px 28px;
+      }
     }
   }
   .parentGeoSlaskNav  {
