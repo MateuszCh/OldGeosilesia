@@ -115,7 +115,7 @@
         display: flex;
         position: absolute;
         color: white;
-        background-color: rgba(lighten($header-color, 10%),.9);
+        background-color: rgba(lighten($header-color, 10%),1);
         z-index: 50;
         bottom: 0;
         left: 0;
@@ -126,10 +126,11 @@
         align-items: center;
         justify-content: center;
         transition: all .3s ease-in-out;
-        opacity: 0;
+        opacity: 1;
         @include laptops  {
           background-color: rgba(lighten($header-color, 10%),1);
-          height: 36px;
+          min-height: 36px;
+          opacity: 0;
         }
       }
     }

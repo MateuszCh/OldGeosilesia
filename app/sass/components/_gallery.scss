@@ -98,10 +98,11 @@
         align-items: center;
         justify-content: center;
         transition: all .2s ease-in-out;
-        opacity: 0;
+        opacity: 1;
         @include laptops  {
           background-color: rgba(lighten($header-color, 10%),1);
           height: 36px;
+          opacity: 0;
         }
       }
     }
