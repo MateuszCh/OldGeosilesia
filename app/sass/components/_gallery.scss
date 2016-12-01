@@ -49,8 +49,8 @@
       overflow: hidden;
       //border: 1px solid black;
       padding: 5px;
-      box-shadow: 0 0 3px 3px darken($header-color, 20%);
-      background-color: darken($header-color, 5%);
+      box-shadow: 0 0 3px 3px darken(white, 20%);
+      background-color: darken(white, 5%);
       @include mq-not-mobile  {
         width: 30%;
         padding: 5px;
@@ -63,7 +63,7 @@
         transition: all .5s cubic-bezier(.17,.67,.83,.67);
         width: 14%;
         &:hover figcaption  {
-          display: flex;
+          opacity: .8;
         }
         &:hover img   {
           transform: scale(1.4);
@@ -87,7 +87,7 @@
         display: flex;
         position: absolute;
         color: white;
-        background-color: rgba(darken($header-color, 5%),.9);
+        background-color: rgba(lighten($header-color, 10%),.9);
         z-index: 50;
         bottom: 0;
         left: 0;
@@ -98,8 +98,9 @@
         align-items: center;
         justify-content: center;
         transition: all .2s ease-in-out;
+        opacity: 0;
         @include laptops  {
-          background-color: rgba(darken($header-color, 5%),1);
+          background-color: rgba(lighten($header-color, 10%),1);
           height: 36px;
         }
       }
