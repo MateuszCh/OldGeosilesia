@@ -6,12 +6,15 @@
   }
 
   p   {
-    padding-top: 20px;
     margin-bottom: 15px;
     font-family: $text-font;
     color: #666;
     line-height: 24px;
     font-size: .9rem;
+
+    &:first-child   {
+      padding-top: 20px;
+    }
   }
 
   h2  {
@@ -74,6 +77,8 @@
       padding: 5px;
       box-shadow: 0 0 3px 3px darken(white, 20%);
       background-color: darken(white, 5%);
+      display: flex;
+      align-items: center;
       @include mq-not-mobile  {
         width: 30%;
         padding: 5px;
@@ -89,7 +94,7 @@
           opacity: .8;
         }
         &:hover img   {
-          transform: scale(1.4);
+          transform: scale(1.5);
         }
       }
 
