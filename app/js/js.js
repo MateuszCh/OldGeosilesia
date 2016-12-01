@@ -53,3 +53,16 @@ function changeSize() {
     }
     previousSize = currentSize;
 }
+
+(function($){
+    $(function(){
+        $("#buttonUp").click(function(){
+            if($("body").scrollTop() > 0){
+                $('body').stop().animate({
+                    scrollTop: 0
+                }, 500);
+            }
+
+        });
+    });
+})(jQuery);
