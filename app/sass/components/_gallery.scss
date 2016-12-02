@@ -108,3 +108,41 @@
     }
   }
 }
+
+.gallery  {
+  .categorySection  {
+    .listOfCategories {
+      display: flex;
+      width: 80%;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-size: 1rem;
+      font-family: $text-font;
+      @include mq-not-mobile  {
+        width: 75%;
+      }
+      .categories {
+        padding: 2px 5px;
+        margin: 4px 4px;
+        text-align: center;
+        background-color: lighten($header-color, 20%);
+        color: #ccc;
+        cursor: pointer;
+        box-shadow: 1px 1px 2px 2px $header-color;
+        transition: all .5s ease-in-out;
+
+        &:hover {
+          background-color: darken($header-color, 10%);
+          color: #fff;
+        }
+
+      }
+    }
+  }
+}
+
+.gallery .categorySection .listOfCategories li.markedCategory  {
+  background-color: darken($header-color, 10%);
+  color: #fff;
+}
