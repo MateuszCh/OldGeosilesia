@@ -30,7 +30,7 @@
       display: flex;
       padding-top: 0;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: center;
       //align-items: flex-start;
     }
     @include laptops  {
@@ -45,7 +45,7 @@
 
 
       position: relative;
-      margin: 20px 0;
+      margin: 20px 10px;
       overflow: hidden;
       //border: 1px solid black;
       padding: 5px;
@@ -126,10 +126,10 @@
         padding: 2px 5px;
         margin: 4px 4px;
         text-align: center;
-        background-color: lighten($header-color, 20%);
-        color: #ccc;
+        //background-color: lighten($header-color, 20%);
+        color: $header-color;
         cursor: pointer;
-        box-shadow: 1px 1px 2px 2px $header-color;
+        //box-shadow: 1px 1px 2px 2px $header-color;
         transition: all .5s ease-in-out;
 
         &:hover {
@@ -145,4 +145,8 @@
 .gallery .categorySection .listOfCategories li.markedCategory  {
   background-color: darken($header-color, 10%);
   color: #fff;
+}
+
+.gallery .photos figure.hidden {
+  display: none;
 }

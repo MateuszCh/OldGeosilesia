@@ -53,7 +53,7 @@
       display: flex;
       padding-top: 0;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: center;
       //align-items: flex-start;
     }
     @include laptops  {
@@ -71,7 +71,7 @@
 
     figure  {
       position: relative;
-      margin: 20px 0;
+      margin: 20px 10px;
       overflow: hidden;
       //border: 1px solid black;
       padding: 5px;
