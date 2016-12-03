@@ -95,24 +95,65 @@ $('.categories').click(function() {
     }
 });
 
+var ojciec
+
 $(".photos figure").click(function (e) {
     var fullMode = $("<section class='fullScreenMode'></section>");
     fullMode.append($("<button id='closeFullScreenMode'>X</button>"));
-    var ojciec = e.target.parentNode;
+    ojciec = e.target.parentNode;
+    console.log(ojciec);
     var opis = $(ojciec).children("figcaption").text();
     var image = $(ojciec).children("img").attr("src");
     image = image.substring(0, image.length - 8);
     image += ".jpg";
     console.log(image);
     console.log(opis);
-    var figure = $("<figure><img id='fullScreenImage'><figcaption id='fullScreenFigcaption'></figcaption></figure>");
+    var figure = $("<figure id='figura'><img id='fullScreenImage'><figcaption id='fullScreenFigcaption'></figcaption><span class='prevnext prev'><span>&lt;</span></span><span class='prevnext next'><span>&gt;</span></span></figure>");
 
     fullMode.append(figure);
     $(".galleries").append(fullMode);
     $("#fullScreenImage").attr("src", image);
     $("#fullScreenFigcaption").text(opis);
+
     $("#closeFullScreenMode").click(function () {
         $(".fullScreenMode").remove();
     });
+    setTimeout(function () {
+        $("#figura").addClass("up");
+    }, 10);
+
+
+    $(".prevnext").click(function () {
+        // var target = this;
+        if($(this).hasClass("prev")){
+            if($(ojciec).prevAll().length != 0){
+                ojciec = $(ojciec).prev();
+                change(ojciec);
+            } else {
+                ojciec = $("figure:last-of-type");
+                change(ojciec);
+            }
+        } else  {
+            if($(ojciec).nextAll().length != 0){
+                ojciec = $(ojciec).next();
+                change(ojciec);
+            } else {
+                ojciec = $("figure:first-of-type");
+                change(ojciec);
+            }
+
+        }
+    });
 });
 
+function change(ojciec) {
+    console.log(ojciec);
+    var image = $(ojciec).children("img").attr("src");
+    console.log(image);
+    image = image.substring(0, image.length - 8);
+    image += ".jpg";
+    var opis = $(ojciec).children("figcaption").text();
+    $("#fullScreenImage").attr("src", image);
+    $("#fullScreenFigcaption").text(opis);
+    console.log(opis);
+}
