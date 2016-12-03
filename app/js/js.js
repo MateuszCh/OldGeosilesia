@@ -94,3 +94,25 @@ $('.categories').click(function() {
         }, 501);
     }
 });
+
+$(".photos figure").click(function (e) {
+    var fullMode = $("<section class='fullScreenMode'></section>");
+    fullMode.append($("<button id='closeFullScreenMode'>X</button>"));
+    var ojciec = e.target.parentNode;
+    var opis = $(ojciec).children("figcaption").text();
+    var image = $(ojciec).children("img").attr("src");
+    image = image.substring(0, image.length - 8);
+    image += ".jpg";
+    console.log(image);
+    console.log(opis);
+    var figure = $("<figure><img id='fullScreenImage'><figcaption id='fullScreenFigcaption'></figcaption></figure>");
+
+    fullMode.append(figure);
+    $(".galleries").append(fullMode);
+    $("#fullScreenImage").attr("src", image);
+    $("#fullScreenFigcaption").text(opis);
+    $("#closeFullScreenMode").click(function () {
+        $(".fullScreenMode").remove();
+    });
+});
+
