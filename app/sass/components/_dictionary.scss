@@ -15,8 +15,8 @@
     }
   }
   h2 {
-    //padding-top: 100px;
     padding-bottom: 20px;
+    padding-top: 20px;
     width: 80%;
     margin: 0 auto;
     font-family: $headers-font;
@@ -24,17 +24,15 @@
     font-size: 2rem;
     color: darken($header-color, 10%);
     @include mq-not-mobile {
-      //padding-top: 150px;
       font-size: 3rem;
     }
   }
-
-  h3  {
+  dl div dt  {
     font-family: $text-font;
     font-size: 1.3rem;
     color: darken($text-color, 10%);
   }
-  p   {
+  dl div dd   {
     margin: 8px 0 8px 20px;
     font-family: $text-font;
     color: $text-color;
@@ -44,10 +42,11 @@
       font-size: 1rem;
     }
   }
-
-
-  li ul  {
-    margin: 8px 0 8px 50px;
+  dd ul  {
+    margin: 8px 0 8px 20px;
+    @include mq-not-mobile  {
+      margin: 8px 0 8px 50px;
+    }
     li  {
       margin: 10px 0;
       color: $text-color;
@@ -58,7 +57,7 @@
       }
     }
   }
-  ul  {
+  .listOfSources  {
     margin-bottom: 50px;
     li  {
       margin: 10px 0;

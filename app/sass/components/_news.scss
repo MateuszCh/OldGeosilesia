@@ -1,0 +1,35 @@
+.news {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 10px;
+
+  @include mq-not-mobile  {
+    width: 70%;
+    padding-top: 130px;
+  }
+  @include laptops  {
+    width: 60%;
+  }
+
+  h2  {
+    width: 100%;
+    margin: 0 auto;
+    font-family: $headers-font;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    color: darken($header-color, 10%);
+    @include mq-not-mobile  {
+      font-size: 3rem;
+    }
+  }
+
+  article   {
+    background-color: red;
+    margin: 10px;
+    .body {
+      display: none;
+    }
+  }
+}
