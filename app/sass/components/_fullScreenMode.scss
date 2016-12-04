@@ -21,6 +21,7 @@
       border: none;
       height: 2rem;
       width: 2rem;
+      z-index: 100000000;
       &:hover {
         color: lighten($header-color, 20%);
       }
@@ -31,57 +32,77 @@
     }
 
     figure  {
+      height: 100%;
+      width: 100%;
+      margin: 0;
       display: flex;
       flex-direction: column;
       transform: scale(0);
       transition: all .2s ease-in-out;
       position: relative;
+      justify-content: center;
+      align-items: center;
 
       &>span  {
         position: absolute;
-        background-color: rgba(#fff, .2);
+        background-color: transparent;
         height: 100%;
         width: 25%;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 0 10px;
-        opacity: 0;
+        opacity: 1;
         transition: opacity .2s ease-in-out;
-        &:hover {
-          opacity: 1;
+        @include laptops  {
+          opacity: 0;
+          background-color: rgba(#fff, .2);
+          &:hover {
+            opacity: 1;
+          }
         }
+
         span  {
-          background-color: black;
-          height: 20px;
-          width: 20px;
-          color: white;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          padding: 5px;
-          border-radius: 50%;
-          border: 2px solid white;
+          color: transparent;
+          @include laptops  {
+            background-color: black;
+            height: 20px;
+            width: 20px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            border-radius: 50%;
+            border: 2px solid white;
+          }
+
         }
       }
 
       .prev {
         left: 0;
-        //justify-content: flex-start;
       }
       .next {
         right: 0;
-        //justify-content: flex-end;
       }
 
 
       img {
         max-width: 100%;
+        max-height: 100%;
       }
       figcaption  {
         padding: 20px;
         text-align: center;
         color: #ddd;
+        @include landscapePhone {
+          display: none;
+        }
+        @include mq-not-mobile  {
+          display: block;
+        }
       }
     }
   }
