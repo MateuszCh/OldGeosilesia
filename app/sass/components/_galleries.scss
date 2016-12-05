@@ -5,7 +5,7 @@
     width: 80%;
   }
 
-  p   {
+  .description p   {
     margin-bottom: 15px;
     font-family: $text-font;
     color: #666;
@@ -107,8 +107,6 @@
         }
       }
       figcaption  {
-        padding: 10px 5px;
-        display: flex;
         position: absolute;
         color: white;
         background-color: rgba(lighten($header-color, 10%),1);
@@ -118,15 +116,22 @@
         right: 0;
         text-align: center;
         font-family: $headers-font;
-        font-size: 1rem;
-        align-items: center;
-        justify-content: center;
         transition: all .3s ease-in-out;
         opacity: 1;
+        p   {
+          color: inherit;
+          margin: 0;
+          padding: 10px 5px;
+          font-family: inherit;
+          font-size: 1rem;
+        }
         @include laptops  {
           background-color: rgba(lighten($header-color, 10%),1);
           min-height: 36px;
           opacity: 0;
+        }
+        span  {
+          display: none;
         }
       }
     }

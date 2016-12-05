@@ -33,6 +33,7 @@
       h3  {
         color: darken($text-color, 10%);
         font-size: 1.2rem;
+        transition: all .5s ease-in-out;
       }
     }
     .body {
@@ -55,5 +56,8 @@
 .news article.border {
   background-color: lighten($header-color, 30%);
   color: white;
+  h3  {
+    color: white;
+  }
 
 }

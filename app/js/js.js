@@ -95,28 +95,35 @@ $('.categories').click(function() {
     }
 });
 
-var ojciec
+var ojciec;
 
 $(".photos figure").click(function (e) {
     var fullMode = $("<section class='fullScreenMode'></section>");
     fullMode.append($("<button id='closeFullScreenMode'>X</button>"));
-    ojciec = e.target.parentNode;
+    ojciec = $(this);
     console.log(ojciec);
-    var opis = $(ojciec).children("figcaption").text();
+    var opis = $(ojciec).children("figcaption").children(".opis").text();
     var image = $(ojciec).children("img").attr("src");
+    var author = $(ojciec).children("figcaption").children(".authorAndDate").text();
+    var moreText = $(ojciec).children("figcaption").children(".moreText").html();
     image = image.substring(0, image.length - 8);
     image += ".jpg";
     console.log(image);
     console.log(opis);
-    var figure = $("<figure id='figura'><img id='fullScreenImage'><figcaption id='fullScreenFigcaption'></figcaption><span class='prevnext prev'><span>&lt;</span></span><span class='prevnext next'><span>&gt;</span></span></figure>");
+    var figure = $("<figure id='figura'><img id='fullScreenImage'><figcaption id='fullScreenFigcaption'><p id='fullScreenOpis'></p><p id='fullScreenMore'></p><p id='fullScreenAuthor'></p></figcaption><span class='prevnext prev'><span>&lt;</span></span><span class='prevnext next'><span>&gt;</span></span></figure>");
 
     fullMode.append(figure);
     $(".galleries").append(fullMode);
     $("#fullScreenImage").attr("src", image);
-    $("#fullScreenFigcaption").text(opis);
+    $("#fullScreenOpis").text(opis);
+    $("#fullScreenMore").html(moreText);
+    $("#fullScreenAuthor").text(author);
 
     $("#closeFullScreenMode").click(function () {
-        $(".fullScreenMode").remove();
+        $(".fullScreenMode").slideUp(500);
+        setTimeout(function () {
+            $(".fullScreenMode").remove();
+        }, 501);
     });
     setTimeout(function () {
         $("#figura").addClass("up");
@@ -143,6 +150,20 @@ $(".photos figure").click(function (e) {
 
         }
     });
+
+    $(document).keydown(function (e) {
+        var code = e.keyCode || e.which;
+        if(code == 37){
+            $(".prev")[0].click();
+        }
+        if(code == 39){
+            $(".next")[0].click();
+        }
+        if(code == 8 || code == 27){
+            e.preventDefault();
+            $("#closeFullScreenMode").click();
+        }
+    });
 });
 
 function change(ojciec) {
@@ -151,16 +172,20 @@ function change(ojciec) {
     console.log(image);
     image = image.substring(0, image.length - 8);
     image += ".jpg";
-    var opis = $(ojciec).children("figcaption").text();
+    var opis = $(ojciec).children("figcaption").children(".opis").text();
+    var author = $(ojciec).children("figcaption").children(".authorAndDate").text();
+    var moreText = $(ojciec).children("figcaption").children(".moreText").html();
     $("#fullScreenImage").attr("src", image);
-    $("#fullScreenFigcaption").text(opis);
+    $("#fullScreenOpis").text(opis);
+    $("#fullScreenMore").html(moreText);
+    $("#fullScreenAuthor").text(author);
     console.log(opis);
 }
 
 $(".head").click(function () {
     var brat  = $(this).next();
-    $(".body").not(brat).slideUp(400);
-    $(".body").not(brat).parent().removeClass("border");
+    $(".body").not(brat).slideUp(400).parent().removeClass("border");
+    // $(".body").not(brat).parent().removeClass("border");
     $(brat).slideToggle(400);
     $(this).parent().toggleClass("border");
 
