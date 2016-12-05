@@ -31,18 +31,23 @@
     color: #666;
     .head {
       h3  {
+        color: darken($text-color, 10%);
         font-size: 1.2rem;
       }
     }
     .body {
       display: none;
-      padding: 10px 0;
+      padding: 10px 10px;
       a   {
-        text-decoration: none;
         color: inherit;
       }
       p   {
         margin: 10px 0;
+        line-height: 24px;
+        font-size: .9rem;
+        @include laptops  {
+          font-size: 1rem;
+        }
       }
     }
   }

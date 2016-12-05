@@ -1,22 +1,17 @@
 .dictionary {
   width: 90%;
   margin: 0 auto;
+  padding-top: 80px;
   @include mq-not-mobile  {
     width: 80%;
+    padding-top: 130px;
   }
   @include laptops  {
     width: 60%;
   }
 
-  h2:first-child  {
-    padding-top: 100px;
-    @include mq-not-mobile  {
-      padding-top: 150px;
-    }
-  }
   h2 {
     padding-bottom: 20px;
-    padding-top: 20px;
     width: 80%;
     margin: 0 auto;
     font-family: $headers-font;
@@ -26,6 +21,9 @@
     @include mq-not-mobile {
       font-size: 3rem;
     }
+  }
+  h2:last-of-type   {
+    padding-top: 20px;
   }
   dl div dt  {
     font-family: $text-font;
@@ -44,6 +42,8 @@
   }
   dd ul  {
     margin: 8px 0 8px 20px;
+    list-style-type: disc;
+    list-style-position: inside;
     @include mq-not-mobile  {
       margin: 8px 0 8px 50px;
     }
