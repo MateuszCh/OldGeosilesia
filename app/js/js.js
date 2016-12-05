@@ -124,7 +124,6 @@ $(".photos figure").click(function (e) {
 
 
     $(".prevnext").click(function () {
-        // var target = this;
         if($(this).hasClass("prev")){
             if($(ojciec).prevAll().length != 0){
                 ojciec = $(ojciec).prev();
@@ -157,3 +156,21 @@ function change(ojciec) {
     $("#fullScreenFigcaption").text(opis);
     console.log(opis);
 }
+
+$(".head").click(function () {
+    var brat  = $(this).next();
+    $(".body").not(brat).slideUp(400);
+    $(".body").not(brat).parent().removeClass("border");
+    $(brat).slideToggle(400);
+    $(this).parent().toggleClass("border");
+
+
+
+    // if($(this).next().hasClass("teraz")){
+    //     $(this).next().removeClass("teraz");
+    // } else {
+    //     $(".body").removeClass("teraz");
+    //     $(this).next().addClass("teraz");
+    // }
+
+});

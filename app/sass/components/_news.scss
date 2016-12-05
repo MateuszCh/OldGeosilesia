@@ -3,7 +3,6 @@
   margin: 0 auto;
   padding-top: 80px;
   padding-bottom: 10px;
-
   @include mq-not-mobile  {
     width: 70%;
     padding-top: 130px;
@@ -11,7 +10,6 @@
   @include laptops  {
     width: 60%;
   }
-
   h2  {
     width: 100%;
     margin: 0 auto;
@@ -24,12 +22,33 @@
       font-size: 3rem;
     }
   }
-
   article   {
-    background-color: red;
+    padding: 10px 10px 10px 10px;
+    background-color: #ddd;
     margin: 10px;
+    transition: all .5s ease-in-out;
+    font-family: $text-font;
+    color: #666;
+    .head {
+      h3  {
+        font-size: 1.2rem;
+      }
+    }
     .body {
       display: none;
+      padding: 10px 0;
+      a   {
+        text-decoration: none;
+        color: inherit;
+      }
+      p   {
+        margin: 10px 0;
+      }
     }
   }
+}
+.news article.border {
+  background-color: lighten($header-color, 30%);
+  color: white;
+
 }
