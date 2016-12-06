@@ -1,0 +1,39 @@
+.budowa {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 10px;
+  @include mq-not-mobile  {
+    width: 70%;
+    padding-top: 130px;
+
+  }
+  @include laptops  {
+    width: 60%;
+  }
+
+  h2  {
+    width: 100%;
+    margin: 0 auto;
+    font-family: $headers-font;
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 20px;
+    color: darken($header-color, 10%);
+    @include mq-not-mobile  {
+      font-size: 3rem;
+    }
+  }
+  .listOfSources  {
+    margin-bottom: 50px;
+    li  {
+      margin: 10px 0;
+      font-family: $text-font;
+      color: $text-color;
+      font-size: .9rem;
+      @include laptops  {
+        font-size: 1rem;
+      }
+    }
+  }
+}
