@@ -49,7 +49,7 @@ gulp.task('html', function(){
 // Image Task
 // Compress
 gulp.task('image', function(){
-    gulp.src('app/imgUn/*')
+    gulp.src('app/imgUn/*/*/*')
         .pipe(imagemin())
         .pipe(gulp.dest('app/images'));
 });

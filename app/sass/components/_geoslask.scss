@@ -1,4 +1,5 @@
-.budowa {
+.geoslask   {
+
   width: 100%;
   margin: 0 auto;
   padding-top: 80px;
@@ -11,11 +12,9 @@
   @include laptops  {
     width: 60%;
   }
-
   .structures:nth-of-type(n+2) {
     display: none;
   }
-
   .tabs>ul {
     display: flex;
     width: 95%;
@@ -56,7 +55,6 @@
       }
     }
   }
-
   h2  {
     width: 100%;
     margin: 0 auto;
@@ -72,13 +70,10 @@
   .literature h2  {
     font-size: 2rem;
   }
-
-
   .tabs {
     margin-bottom: 30px;
     background-color: white;
   }
-
   .structures {
     padding: 10px 5px;
     ol {
@@ -120,7 +115,6 @@
         padding: 0 10px;
       }
     }
-
     figcaption  {
       font-size: .7rem;
       font-family: $text-font;
@@ -146,7 +140,6 @@
       color: darken($header-color, 10%);
       text-align: center;
     }
-
     figure  {
       width: 100%;
       margin: 10px 0;
@@ -162,8 +155,6 @@
       }
     }
   }
-
-
   .listOfSources  {
     margin-bottom: 50px;
     padding: 0 5px;
@@ -178,8 +169,7 @@
     }
   }
 }
-
-.budowa .przekroj {
+.geoslask .przekroj {
   @include laptops  {
     figure  {
       width: 75%;
@@ -197,5 +187,10 @@
     ol  {
       width: 33%;
     }
+  }
+}
+.tabs .structures .polozenieAdmKart  {
+  @include laptops  {
+    width: 60%;
   }
 }

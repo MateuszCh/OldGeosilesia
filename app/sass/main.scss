@@ -1,13 +1,11 @@
 @import "base/normalize/normalize";
-@import "base/base";
 @import "base/fonts";
 
 @import 'helpers/variables';
 @import "helpers/mixins";
 @import 'helpers/placeholders';
-
+@import "base/base";
 @import 'layout/header';
-@import "layout/footer";
 
 @import 'components/nav';
 @import "components/bannerPhoto";
@@ -15,8 +13,7 @@
 
 @import "components/gallery";
 @import "components/dictionary";
-@import "components/polozenie";
-@import "components/budowa";
+@import "components/geoslask";
 @import "components/about";
 @import "components/news";
 @import "components/galleries";
