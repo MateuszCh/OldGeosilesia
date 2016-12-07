@@ -202,6 +202,8 @@ $(".head").click(function () {
 
 $(".tabs li").click(function () {
     var tabClass = $(this).attr("class");
+    tabClass = tabClass.substring(0, 11);
+    console.log(tabClass);
     $(".tabs li").removeClass("selectedTab");
     $(this).addClass("selectedTab");
     $(".structures").each(function () {

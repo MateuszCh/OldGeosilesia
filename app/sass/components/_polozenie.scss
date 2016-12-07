@@ -1,4 +1,4 @@
-.budowa {
+.polozenie {
   width: 100%;
   margin: 0 auto;
   padding-top: 80px;
@@ -179,23 +179,8 @@
   }
 }
 
-.budowa .przekroj {
+#structure-1-1 figure  {
   @include laptops  {
-    figure  {
-      width: 75%;
-    }
-  }
-  @include laptopsForPrzekroj{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    figure  {
-      width: 65%;
-      margin: 0;
-    }
-    ol  {
-      width: 33%;
-    }
+    width: 60%;
   }
 }
