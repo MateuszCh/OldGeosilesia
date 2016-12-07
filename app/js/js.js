@@ -199,3 +199,14 @@ $(".head").click(function () {
     // }
 
 });
+
+$(".tabs li").click(function () {
+    var tabClass = $(this).attr("class");
+    $(".structures").each(function () {
+       if($(this).attr("id") == tabClass){
+           $(this).show();
+       } else {
+           $(this).hide();
+       }
+    });
+});

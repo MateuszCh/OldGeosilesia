@@ -29,6 +29,10 @@
     transition: all .5s ease-in-out;
     font-family: $text-font;
     color: #666;
+
+    &:first-of-type .body {
+      display: block;
+    }
     .head {
       h3  {
         color: darken($text-color, 10%);
@@ -39,6 +43,7 @@
     .body {
       display: none;
       padding: 10px 10px;
+
       a   {
         color: inherit;
       }

@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>GeoSilesia</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet"href="css/main.css">
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -36,11 +36,11 @@
         <h2>Budowa geologiczna</h2>
         <section class="tabs">
             <ul>
-                <li><a href="#structure-1">Powierzchniowe utwory geologiczne</a></li>
-                <li><a href="#structure-2">Wgłębna budowa geologiczna</a></li>
-                <li><a href="#structure-2">Kopaliny</a></li>
+                <li class="structure-1">Powierzchniowe utwory geologiczne</li>
+                <li class="structure-2">Wgłębna budowa geologiczna</li>
+                <li class="structure-3">Kopaliny</li>
             </ul>
-            <section id="structure-1">
+            <section id="structure-1" class="structures">
                 <h3>Powierzchniowe utwory geologiczne</h3>
                 <p>Na powierzchni województwa śląskiego występują utwory geologiczne zaliczane do 9 z 14 okresów (systemów) geologicznych rozpoznanych w Polsce. W regionie północnym, centralnym i zachodnim odsłaniają się skały górnopaleozoiczne (dewon, karbon i perm), mezozoiczne (trias, jura i kreda) i kenozoiczne (paleogen, neogen i czwartorzęd). W regionie południowym (Zewnętrzne Karpaty Zachodnie) na powierzchni terenu występują tylko skały mezozoiczne (jura i kreda) i kenozoiczne (paleogen, neogen i czwartorzęd) (ryc. 1). </p>
                 <figure>
@@ -48,7 +48,7 @@
                     <figcaption>Ryc. 1. Mapa geologiczna utworów powierzchniowych (wg Małolepszego & Nity 2004) </figcaption>
                 </figure>
             </section>
-            <section id="structure-2">
+            <section id="structure-2" class="structures">
                 <h3>Wgłębna budowa geologiczna</h3>
                 <section id="structure-2-1">
                     <h4>Na powierzchni podkenozoicznej</h4>
@@ -96,15 +96,15 @@
                     </ol>
                 </section>
             </section>
-            <section id="structure-3">
+            <section id="structure-3" class="structures">
                 <h3>Kopaliny</h3>
                 <p>W różnowiekowych skałach udokumentowanych na terenie województwa, obok skamieniałości, struktur sedymentacyjnych i tektonicznych, występują liczne kopaliny i towarzyszące im minerały (patrz. Gabzdyl, Gorol 2008; Chybiorz, Tyc 2012; Chybiorz i in. 2015).
                     Szczegółowa informacja o budowie geologicznej województwa, wodach podziemnych, kopalinach i środowisku przedstawiona jest na seryjnych mapach geologicznych w skali 1:50 000. Skany map geologicznych, hydrogeologicznych i środowiskowych wraz z objaśnieniami tekstowymi dostępne są bezpłatnie w Portalu Centralnej Bazy Danych Geologicznych (CBDG). Baza prowadzona i rozbudowywana jest przez Państwowy Instytut Geologiczny-PIB. Te i inne dane geologiczne (np. otwory wiertnicze, złoża kopalin) dostępne są również w aplikacji mobilnej GeoLOG oraz w formie usług WMS i WFS na Portalu CBDG.
                 </p>
             </section>
         </section>
-        <section>
-            <h3>Wybrana literatura</h3>
+        <section class="literature">
+            <h2>Wybrana literatura</h2>
             <ul class="listOfSources">
                 <li>BUŁA Z., HABRYN R. & KUREK S. 2002. Atlas geologiczny paleozoiku bez permu w strefie kontaktu bloków górnośląskiego i małopolskiego w skali 1:200 000. Państwowy Instytut Geologiczny, Warszawa.</li>
                 <li>BUŁA Z., ŻABA J. & HABRYN R. 2008. Regionalizacja tektoniczna Polski—Polska południowa (blok górnośląski i blok małopolski). Przegląd Geologiczny, 56(10): 912–920.</li>
