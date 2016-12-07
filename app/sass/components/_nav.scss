@@ -1,12 +1,18 @@
 
 .mainNav li.active   {
-  background-color: lighten($header-color, 30%);
+  background-color: lighten($header-color, 20%);
   //color: darken($header-color, 10%)
-
+  ul li   {
+    background-color: $header-color;
+    @include mq-not-mobile  {
+      background-color: lighten($header-color, 10%);
+    }
+  }
   ul li.active  {
-    background-color: lighten($header-color, 30%);
+    background-color: lighten($header-color, 20%);
     &:hover   {
       background-color: white;
+      color: darken($header-color, 10%)
     }
   }
 }
@@ -24,6 +30,8 @@
   @include laptops  {
     padding-bottom: 0;
   }
+
+
   a,
   span  {
     cursor: pointer;
@@ -84,9 +92,9 @@
     }
     li  {
       transition: all .2s ease-in-out;
-
+      padding: 3px 0;
       @include mq-not-mobile  {
-        background-color: $header-color;
+        background-color: lighten($header-color, 10%);
         padding: 5px 0;
         width: 100%;
         &:hover   {
