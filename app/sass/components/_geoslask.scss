@@ -189,8 +189,14 @@
     }
   }
 }
-.tabs .structures .polozenieAdmKart  {
+.tabs .structures .sixty  {
   @include laptops  {
     width: 60%;
+  }
+}
+
+.tabs .structures figure.sto  {
+  @include mq-not-mobile  {
+    width: 100%;
   }
 }
