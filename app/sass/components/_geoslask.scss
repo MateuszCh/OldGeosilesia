@@ -1,21 +1,8 @@
-.geoslask   {
-
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 80px;
-  padding-bottom: 10px;
-  @include mq-not-mobile  {
-    width: 80%;
-    padding-top: 130px;
-
-  }
-  @include laptops  {
-    width: 60%;
-  }
+.tabs   {
   .structures:nth-of-type(n+2) {
     display: none;
   }
-  .tabs>ul {
+  &>ul {
     display: flex;
     width: 95%;
     margin: 0 auto;
@@ -55,13 +42,30 @@
       }
     }
   }
-
-  .tabs {
-    margin-bottom: 30px;
-    background-color: white;
-  }
   .structures {
+    background-color: white;
     padding: 10px 5px;
+
+    .przekroj  {
+      @include laptops  {
+        figure  {
+          width: 75%;
+        }
+      }
+      @include laptopsForPrzekroj{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        figure  {
+          width: 65%;
+          margin: 0;
+        }
+        ol  {
+          width: 33%;
+        }
+      }
+    }
     ol {
       list-style-position: inside;
       font-family: $text-font;
@@ -70,24 +74,6 @@
       font-size: .7rem;
       @include mq-not-mobile  {
         font-size: .8rem;
-      }
-    }
-    ul  {
-      list-style-type: disc;
-      list-style-position: outside;
-      padding-left: 20px;
-      @include laptops  {
-        padding-left: 50px;
-      }
-      li  {
-        margin: 10px 0;
-        color: $text-color;
-        font-family: $text-font;
-        line-height: 2px;
-        font-size: .9rem;
-        @include laptops  {
-          font-size: 1rem;
-        }
       }
     }
     figcaption  {
@@ -109,10 +95,19 @@
       text-align: center;
       color: darken($header-color, 10%);
     }
-
     figure  {
       width: 100%;
       margin: 10px 0;
+      &.sto {
+        @include mq-not-mobile  {
+          width: 100%;
+        }
+      }
+      &.sixty {
+        @include laptops  {
+          width: 60%;
+        }
+      }
       @include mq-not-mobile  {
         margin: 0 auto;
         width: 75%;
@@ -125,50 +120,5 @@
       }
     }
   }
-   ul.listOfGeostanowiska  {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style-type: none;
-    li  {
-      max-width: 150px;
-      margin: .625rem;
-      img {
-        width: 100%;
-      }
-    }
-  }
-}
-.geoslask .przekroj {
-  @include laptops  {
-    figure  {
-      width: 75%;
-    }
-  }
-  @include laptopsForPrzekroj{
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    figure  {
-      width: 65%;
-      margin: 0;
-    }
-    ol  {
-      width: 33%;
-    }
-  }
-}
-.tabs .structures .sixty  {
-  @include laptops  {
-    width: 60%;
-  }
 }
 
-.tabs .structures figure.sto  {
-  @include mq-not-mobile  {
-    width: 100%;
-  }
-}

@@ -1,21 +1,19 @@
 @import "base/normalize/normalize";
 @import "base/fonts";
-
 @import 'helpers/variables';
 @import "helpers/mixins";
 @import 'helpers/placeholders';
-@import "base/base";
-@import 'layout/header';
+@import "base/general";
 
+@import 'layout/header';
 @import 'components/nav';
 @import "components/mainPage";
 @import "components/buttonUp";
-
 @import "components/gallery";
 @import "components/geoslask";
 @import "components/about";
 @import "components/news";
 @import "components/galleries";
 @import "components/fullScreenMode";
-@import "base/general";
+@import "components/lists";
 

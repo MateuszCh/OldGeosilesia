@@ -1,3 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul  {
+  list-style: none;
+}
+body  {
+  @include mq-not-mobile  {
+    background-color: #eee;
+  }
+}
 p,
 dd  {
   font-family: $text-font;
@@ -10,21 +23,10 @@ dd  {
     padding: 0 10px;
   }
 }
-.listOfSources  {
-  margin-bottom: 50px;
-  padding: 0 5px;
-  li  {
-    margin: 10px 0;
-    font-family: $text-font;
-    color: $text-color;
-    font-size: .9rem;
-    @include laptops  {
-      font-size: 1rem;
-    }
-  }
-}
+
 h2  {
   margin: 0 auto;
+  width: 100%;
   font-family: $headers-font;
   text-align: center;
   font-size: 2rem;
@@ -34,37 +36,14 @@ h2  {
     font-size: 3rem;
   }
 }
-
-.discList  {
-  list-style-type: disc;
-  list-style-position: outside;
-  padding-left: 20px;
-  @include laptops  {
-    padding-left: 50px;
-  }
-  li  {
-    margin: 10px 0;
-    color: $text-color;
-    font-family: $text-font;
-    line-height: 24px;
-    font-size: .9rem;
-    @include laptops  {
-      font-size: 1rem;
-    }
-  }
-}
 dt  {
   font-family: $text-font;
   font-size: 1.3rem;
   color: darken($text-color, 10%);
 }
 
-h2:nth-of-type(2)   {
-  padding-top: 20px;
-}
-
 main {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   padding-top: 80px;
   @include mq-not-mobile  {

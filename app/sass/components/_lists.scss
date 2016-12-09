@@ -1,0 +1,74 @@
+.listOfSources  {
+  margin-bottom: 50px;
+  padding: 0 5px;
+  li  {
+    margin: 10px 0;
+    font-family: $text-font;
+    color: $text-color;
+    font-size: .9rem;
+    @include laptops  {
+      font-size: 1rem;
+    }
+  }
+}
+
+.discList  {
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 20px;
+  @include laptops  {
+    padding-left: 50px;
+  }
+  li  {
+    margin: 10px 0;
+    color: $text-color;
+    font-family: $text-font;
+    line-height: 24px;
+    font-size: .9rem;
+    @include laptops  {
+      font-size: 1rem;
+    }
+  }
+}
+
+.listOfGeostanowiska  {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  li  {
+    max-width: 150px;
+    margin: .625rem;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.listOfCategories {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 1rem;
+  font-family: $text-font;
+  .categories {
+    padding: 2px 5px;
+    margin: 4px 4px;
+    text-align: center;
+    color: $header-color;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    &:hover {
+      background-color: darken($header-color, 10%);
+      color: #fff;
+    }
+    &.markedCategory {
+      background-color: darken($header-color, 10%);
+      color: #fff;
+    }
+  }
+}

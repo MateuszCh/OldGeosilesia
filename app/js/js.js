@@ -7,6 +7,7 @@ var previousSize = window.innerWidth;
 $(window).ready(function () {
     $(".photos figure").addClass("figuryUp");
     $(".photos a").addClass("figuryUp");
+    $(".galleries figure").addClass("figuryUp");
 });
 
 $("#menu").click(function () {
@@ -92,7 +93,7 @@ $('.categories').click(function() {
 
 var ojciec;
 
-$(".photos figure").click(function () {
+$(".galleries figure").click(function () {
     var fullMode = $("<section class='fullScreenMode'></section>");
     fullMode.append($("<button id='closeFullScreenMode'>X</button>"));
     ojciec = $(this);
@@ -108,7 +109,7 @@ $(".photos figure").click(function () {
     var figure = $("<figure id='figura'><img id='fullScreenImage'><figcaption id='fullScreenFigcaption'><h3 id='fullScreenOpis'></h3><p id='fullScreenMore'></p><p id='fullScreenAuthor'></p></figcaption><span class='prevnext prev'><span>&lt;</span></span><span class='prevnext next'><span>&gt;</span></span></figure>");
 
     fullMode.append(figure);
-    $(".galleries").append(fullMode);
+    $("main").append(fullMode);
     $("#fullScreenImage").attr("src", image);
     $("#fullScreenOpis").text(opis);
     $("#fullScreenMore").html(moreText);
@@ -127,7 +128,7 @@ $(".photos figure").click(function () {
 
     $(".prevnext").click(function () {
         if($(this).hasClass("prev")){
-            if($(ojciec).prevAll().length != 0){
+            if($(ojciec).prevAll("figure").length != 0){
                 ojciec = $(ojciec).prev();
                 change(ojciec);
             } else {
@@ -135,7 +136,7 @@ $(".photos figure").click(function () {
                 change(ojciec);
             }
         } else  {
-            if($(ojciec).nextAll().length != 0){
+            if($(ojciec).nextAll("figure").length != 0){
                 ojciec = $(ojciec).next();
                 change(ojciec);
             } else {

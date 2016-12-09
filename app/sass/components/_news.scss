@@ -9,6 +9,16 @@
     &:first-of-type .body {
       display: block;
     }
+    &.border  {
+      background-color: lighten($header-color, 30%);
+      color: white;
+      .head h3  {
+        color: white;
+      }
+      p   {
+        color: white;
+      }
+    }
     .head {
       h3  {
         color: darken($text-color, 10%);
@@ -20,6 +30,7 @@
         line-height: normal;
         margin: 0;
         padding: 0;
+        transition: all .5s ease-in-out;
       }
     }
     .body {
@@ -29,16 +40,9 @@
         color: inherit;
         padding: 0 10px;
       }
+      p   {
+        transition: all .5s ease-in-out;
+      }
     }
-  }
-}
-.news article.border {
-  background-color: lighten($header-color, 30%);
-  color: white;
-  h3  {
-    color: white;
-  }
-  p   {
-    color: white;
   }
 }
