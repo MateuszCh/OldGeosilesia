@@ -11,8 +11,6 @@
   @include laptops  {
     width: 60%;
   }
-
-  p,
   ul{
     margin-bottom: 15px;
     font-family: $text-font;
@@ -37,22 +35,9 @@
       }
     }
   }
-
   p:nth-child(11) {
     border-bottom: 1px solid #666;
     padding-bottom: 8px;
     margin-bottom: 8px;
-  }
-  h2  {
-    width: 100%;
-    margin: 0 auto;
-    font-family: $headers-font;
-    text-align: center;
-    font-size: 2rem;
-    padding-bottom: 20px;
-    color: darken($header-color, 10%);
-    @include mq-not-mobile  {
-      font-size: 3rem;
-    }
   }
 }

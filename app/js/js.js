@@ -50,18 +50,13 @@ function changeSize() {
     previousSize = currentSize;
 }
 
-(function($){
-    $(function(){
-        $("#buttonUp").click(function(){
-            if($("body").scrollTop() > 0){
-                $('body').stop().animate({
-                    scrollTop: 0
-                }, 500);
-            }
-
-        });
-    });
-})(jQuery);
+$("#buttonUp").click(function(){
+    if($("body").scrollTop() > 0){
+        $("body").stop().animate({
+            scrollTop: 0
+        }, 500);
+    }
+});
 
 $('.categories').click(function() {
     $('.markedCategory').removeClass('markedCategory');
@@ -88,7 +83,6 @@ $('.categories').click(function() {
                     setTimeout(function () {
                         $(obiekt).addClass("figuryUp");
                     }, 100);
-                    // $(this).addClass("figuryUp");
                 }
             })
         }, 501);
@@ -97,7 +91,7 @@ $('.categories').click(function() {
 
 var ojciec;
 
-$(".photos figure").click(function (e) {
+$(".photos figure").click(function () {
     var fullMode = $("<section class='fullScreenMode'></section>");
     fullMode.append($("<button id='closeFullScreenMode'>X</button>"));
     ojciec = $(this);
@@ -110,7 +104,7 @@ $(".photos figure").click(function (e) {
     image += ".jpg";
     console.log(image);
     console.log(opis);
-    var figure = $("<figure id='figura'><img id='fullScreenImage'><figcaption id='fullScreenFigcaption'><p id='fullScreenOpis'></p><p id='fullScreenMore'></p><p id='fullScreenAuthor'></p></figcaption><span class='prevnext prev'><span>&lt;</span></span><span class='prevnext next'><span>&gt;</span></span></figure>");
+    var figure = $("<figure id='figura'><img id='fullScreenImage'><figcaption id='fullScreenFigcaption'><h3 id='fullScreenOpis'></h3><p id='fullScreenMore'></p><p id='fullScreenAuthor'></p></figcaption><span class='prevnext prev'><span>&lt;</span></span><span class='prevnext next'><span>&gt;</span></span></figure>");
 
     fullMode.append(figure);
     $(".galleries").append(fullMode);
@@ -185,19 +179,8 @@ function change(ojciec) {
 $(".head").click(function () {
     var brat  = $(this).next();
     $(".body").not(brat).slideUp(400).parent().removeClass("border");
-    // $(".body").not(brat).parent().removeClass("border");
     $(brat).slideToggle(400);
     $(this).parent().toggleClass("border");
-
-
-
-    // if($(this).next().hasClass("teraz")){
-    //     $(this).next().removeClass("teraz");
-    // } else {
-    //     $(".body").removeClass("teraz");
-    //     $(this).next().addClass("teraz");
-    // }
-
 });
 
 $(".tabs li").click(function () {

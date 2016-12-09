@@ -10,18 +10,6 @@
   @include laptops  {
     width: 60%;
   }
-  h2  {
-    width: 100%;
-    margin: 0 auto;
-    font-family: $headers-font;
-    text-align: center;
-    font-size: 2rem;
-    padding-bottom: 10px;
-    color: darken($header-color, 10%);
-    @include mq-not-mobile  {
-      font-size: 3rem;
-    }
-  }
   article   {
     padding: 10px 10px 10px 10px;
     background-color: #ddd;
@@ -39,21 +27,19 @@
         font-size: 1.2rem;
         transition: all .5s ease-in-out;
       }
+      p  {
+        font-size: 1rem;
+        line-height: normal;
+        margin: 0;
+        padding: 0;
+      }
     }
     .body {
       display: none;
       padding: 10px 10px;
-
       a   {
         color: inherit;
-      }
-      p   {
-        margin: 10px 0;
-        line-height: 24px;
-        font-size: .9rem;
-        @include laptops  {
-          font-size: 1rem;
-        }
+        padding: 0 10px;
       }
     }
   }
@@ -62,6 +48,9 @@
   background-color: lighten($header-color, 30%);
   color: white;
   h3  {
+    color: white;
+  }
+  p   {
     color: white;
   }
 

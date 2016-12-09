@@ -1,43 +1,11 @@
 .galleries  {
   width: 90%;
   margin: 0 auto;
+  padding-top: 80px;
   @include mq-not-mobile  {
     width: 80%;
+    padding-top: 130px;
   }
-
-  .description p   {
-    margin-bottom: 15px;
-    font-family: $text-font;
-    color: #666;
-    line-height: 24px;
-    font-size: .9rem;
-
-    &:first-child   {
-      padding-top: 20px;
-    }
-  }
-
-  h2  {
-    padding-top: 80px;
-    width: 80%;
-    margin: 0 auto;
-    font-family: $headers-font;
-    text-align: center;
-    font-size: 2rem;
-    color: darken($header-color, 10%);
-    @include mq-not-mobile  {
-      padding-top: 130px;
-      font-size: 3rem;
-    }
-
-    a  {
-      position: absolute;
-      left: 10%;
-      text-decoration: none;
-      color: inherit;
-    }
-  }
-
   @include mq-not-mobile  {
     min-height: calc(100vh - 76px);
   }

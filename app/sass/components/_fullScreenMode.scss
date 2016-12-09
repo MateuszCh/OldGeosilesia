@@ -26,11 +26,9 @@
         color: lighten($header-color, 20%);
       }
     }
-
     .up   {
       transform: scale(1);
     }
-
     figure  {
       height: 100%;
       width: 100%;
@@ -42,11 +40,9 @@
       position: relative;
       justify-content: center;
       align-items: center;
-
       .prevnext  {
         position: absolute;
         background-color: transparent;
-        //height: 100%;
         width: 25%;
         display: flex;
         align-items: center;
@@ -63,7 +59,6 @@
             opacity: 1;
           }
         }
-
         span  {
           color: transparent;
           @include laptops  {
@@ -82,38 +77,30 @@
 
         }
       }
-
       .prev {
         left: 0;
       }
       .next {
         right: 0;
       }
-
-
       img {
         max-width: 100%;
         max-height: 100%;
       }
-      figcaption p  {
-        text-align: center;
-        color: #ddd;
-        padding: 5px;
-        font-size: .9rem;
-        line-height: normal;
-        font-family: $text-font;
-        &:first-child {
-          font-size: 1rem;
+      figcaption  {
+        h3  {
+          margin-top: 10px;
+        }
+        h3,
+        p  {
+          text-align: center;
+          color: #ddd;
         }
         @include landscapePhone {
           display: none;
         }
         @include mq-not-mobile  {
           display: block;
-          font-size: 1rem;
-          &:first-child {
-            font-size: 1.2rem;
-          }
         }
       }
     }
