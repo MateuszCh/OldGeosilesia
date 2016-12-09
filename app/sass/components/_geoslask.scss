@@ -55,9 +55,7 @@
       }
     }
   }
-  .literature h2  {
-    font-size: 2rem;
-  }
+
   .tabs {
     margin-bottom: 30px;
     background-color: white;
@@ -76,7 +74,7 @@
     }
     ul  {
       list-style-type: disc;
-      list-style-position: inside;
+      list-style-position: outside;
       padding-left: 20px;
       @include laptops  {
         padding-left: 50px;
@@ -85,7 +83,7 @@
         margin: 10px 0;
         color: $text-color;
         font-family: $text-font;
-        line-height: 20px;
+        line-height: 2px;
         font-size: .9rem;
         @include laptops  {
           font-size: 1rem;
@@ -111,12 +109,7 @@
       text-align: center;
       color: darken($header-color, 10%);
     }
-    h4  {
-      font-family: $text-font;
-      margin: 10px 0;
-      color: darken($header-color, 10%);
-      text-align: center;
-    }
+
     figure  {
       width: 100%;
       margin: 10px 0;
@@ -132,9 +125,6 @@
       }
     }
   }
-
-
-
    ul.listOfGeostanowiska  {
     display: flex;
     margin: 0;
@@ -150,8 +140,6 @@
       }
     }
   }
-
-
 }
 .geoslask .przekroj {
   @include laptops  {

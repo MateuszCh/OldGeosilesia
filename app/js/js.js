@@ -6,6 +6,7 @@ var previousSize = window.innerWidth;
 
 $(window).ready(function () {
     $(".photos figure").addClass("figuryUp");
+    $(".photos a").addClass("figuryUp");
 });
 
 $("#menu").click(function () {
@@ -64,17 +65,17 @@ $('.categories').click(function() {
     var filterVal = $(this).data("category");
 
     if(filterVal =="all"){
-        $(".photos figure").removeClass("figuryUp");
+        $(".photos a").removeClass("figuryUp");
         setTimeout(function () {
-            $(".photos figure").removeClass("hidden");
+            $(".photos a").removeClass("hidden");
             setTimeout(function () {
-                $(".photos figure").addClass("figuryUp");
+                $(".photos a").addClass("figuryUp");
             }, 100);
         }, 501);
     } else {
-        $(".photos figure").removeClass("figuryUp");
+        $(".photos a").removeClass("figuryUp");
         setTimeout(function () {
-            $(".photos figure").removeClass("hidden").each(function () {
+            $(".photos a").removeClass("hidden").each(function () {
                 if($(this).data("category") != filterVal){
                     $(this).addClass("hidden");
                 }

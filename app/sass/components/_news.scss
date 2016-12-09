@@ -1,15 +1,4 @@
 .news {
-  width: 90%;
-  margin: 0 auto;
-  padding-top: 80px;
-  padding-bottom: 10px;
-  @include mq-not-mobile  {
-    width: 70%;
-    padding-top: 130px;
-  }
-  @include laptops  {
-    width: 60%;
-  }
   article   {
     padding: 10px 10px 10px 10px;
     background-color: #ddd;
@@ -17,7 +6,6 @@
     transition: all .5s ease-in-out;
     font-family: $text-font;
     color: #666;
-
     &:first-of-type .body {
       display: block;
     }
@@ -53,5 +41,4 @@
   p   {
     color: white;
   }
-
 }
