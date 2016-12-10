@@ -33,7 +33,7 @@
     @include laptops  {
       transform: scale(0);
       transition: all .5s cubic-bezier(.17,.67,.83,.67);
-      width: 15%;
+      width: 21%;
       &:hover figcaption  {
         opacity: .8;
       }

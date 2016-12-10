@@ -6,12 +6,12 @@
     font-family: $text-font;
     color: $text-color;
     font-size: .9rem;
+    word-wrap: break-word;
     @include laptops  {
       font-size: 1rem;
     }
   }
 }
-
 .discList  {
   list-style-type: disc;
   list-style-position: outside;
@@ -30,7 +30,6 @@
     }
   }
 }
-
 .listOfGeostanowiska  {
   display: flex;
   margin: 0;
@@ -46,7 +45,6 @@
     }
   }
 }
-
 .listOfCategories {
   width: 100%;
   display: flex;

@@ -10,39 +10,38 @@
       display: block;
     }
     &.border  {
-      background-color: lighten($header-color, 30%);
+      //background-color: #DF2D4E;
+      background-color: #0C8A7F;
       color: white;
-      .head h3  {
-        color: white;
-      }
+      h3,
       p   {
         color: white;
       }
     }
+
+    p   {
+      transition: all .5s ease-in-out;
+    }
+    a   {
+      color: inherit;
+      padding: 0 10px;
+    }
+    h3  {
+      color: darken($text-color, 10%);
+      font-size: 1.2rem;
+      transition: all .5s ease-in-out;
+    }
     .head {
-      h3  {
-        color: darken($text-color, 10%);
-        font-size: 1.2rem;
-        transition: all .5s ease-in-out;
-      }
       p  {
         font-size: 1rem;
         line-height: normal;
         margin: 0;
         padding: 0;
-        transition: all .5s ease-in-out;
       }
     }
     .body {
       display: none;
       padding: 10px 10px;
-      a   {
-        color: inherit;
-        padding: 0 10px;
-      }
-      p   {
-        transition: all .5s ease-in-out;
-      }
     }
   }
 }

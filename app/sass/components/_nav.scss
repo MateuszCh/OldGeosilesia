@@ -1,4 +1,3 @@
-
 .mainNav li.active   {
   background-color: lighten($header-color, 20%);
   //color: darken($header-color, 10%)
@@ -16,9 +15,6 @@
     }
   }
 }
-
-
-
 .mainNav  {
   display: none;
   @include mq-not-mobile  {
@@ -30,8 +26,6 @@
   @include laptops  {
     padding-bottom: 0;
   }
-
-
   a,
   span  {
     cursor: pointer;
@@ -45,7 +39,6 @@
     @include mq-not-mobile  {
       background-color: lighten($header-color, 10%);
       flex-grow: 1;
-      //margin: 0 10px;
       text-align: center;
       &:hover {
         background-color: white;
