@@ -36,11 +36,17 @@
                 </ul>
             </nav>
         </header>
-        <section class="bannerPhoto">
-        </section>
-        <section class="map">
+        <div class="bannerPhoto">
+        </div>
+        <section class="mapSection">
+            <h2>Atrakcje Geoturystyczne</h2>
+            <div id="map" class="map">
+            </div>
         </section>
         <button class="buttonUp" id="buttonUp"><a href="#">↑</a></button>
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmB631kh-m9oK9PL_i4OEmvkRqjcdeWzg&callback=initMap">
+        </script>
         <script src="js/js.js"></script>
     </body>
 </html>

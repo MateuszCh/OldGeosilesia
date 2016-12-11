@@ -5,7 +5,6 @@
 var previousSize = window.innerWidth;
 
 $(window).ready(function () {
-    $(".photos figure").addClass("figuryUp");
     $(".photos a").addClass("figuryUp");
     $(".galleries figure").addClass("figuryUp");
 });
@@ -104,8 +103,6 @@ $(".galleries figure").click(function () {
     var moreText = $(ojciec).children("figcaption").children(".moreText").html();
     image = image.substring(0, image.length - 8);
     image += ".jpg";
-    console.log(image);
-    console.log(opis);
     var figure = $("<figure id='figura'><img id='fullScreenImage'><figcaption id='fullScreenFigcaption'><h3 id='fullScreenOpis'></h3><p id='fullScreenMore'></p><p id='fullScreenAuthor'></p></figcaption><span class='prevnext prev'><span>&lt;</span></span><span class='prevnext next'><span>&gt;</span></span></figure>");
 
     fullMode.append(figure);
@@ -116,10 +113,10 @@ $(".galleries figure").click(function () {
     $("#fullScreenAuthor").text(author);
 
     $("#closeFullScreenMode").click(function () {
-        $(".fullScreenMode").slideUp(500);
-        setTimeout(function () {
+        $(".fullScreenMode").slideUp(500, function () {
             $(".fullScreenMode").remove();
-        }, 501);
+        });
+
     });
     setTimeout(function () {
         $("#figura").addClass("up");
@@ -199,3 +196,81 @@ $(".tabs li").click(function () {
        }
     });
 });
+
+var sizeOfHeader    =   $("header").height();
+
+$(window).on("resize", function () {
+    sizeOfHeader = $("header").height();
+});
+$(window).on("scroll", function () {
+    if(document.getElementById("map")){
+        var scrollTopOfMap  = $("#map")[0].scrollHeight;
+        var scrollTopWindow =   $(window).scrollTop();
+        var diff = scrollTopOfMap - sizeOfHeader;
+        if(scrollTopWindow > diff && scrollTopOfMap){
+            $("header").slideUp(500);
+        } else {
+            $("header").slideDown(100);
+        }
+    }
+});
+
+
+
+
+
+function initMap() {
+    var mapDiv = document.getElementById("map");
+    var options =   {
+        center: {
+            lat: 50.277978,
+            lng: 19.020544
+        },
+        zoom: 9,
+        scrollwheel: false,
+        draggable: true,
+        mapTypeId: "roadmap",
+        // maxZoom: 12,
+        minZoom: 8
+        // disableDefaultUI: true
+    };
+
+    var map = new google.maps.Map(mapDiv, options);
+
+    var contentString = "<div class='marker'><p>Muzeum Górnictwa Rud Żelaza</p><p>Częstochowa, Park im. S.Staszica</p><a href='http://kopalnia.muzeumczestochowa.pl'>Więcej</a></div>";
+
+    var infowindow = new google.maps.InfoWindow({
+        content: contentString,
+        maxWidth: 200
+    });
+
+    var marker = new google.maps.Marker({
+        position: {lat:50.810997, lng:19.100235},
+        map: map,
+        title: "Muzeum Górnictwa Rud Żelaza"
+    });
+
+    marker.addListener("click", function () {
+        infowindow2.close();
+       infowindow.open(map, marker);
+    });
+
+    var contentString2 = "<div class='marker'><p>Ścieżka przyrodnicza na terenie rezerwatu przyrody Góra Zborów</p><p>Podlesice, Gmina Kroczyce</p><a href='http://www.podlesice.org.pl/podlesice1/'>Więcej</a></div>";
+
+    var infowindow2 = new google.maps.InfoWindow({
+        content: contentString2,
+        maxWidth: 200
+    });
+
+    var marker2 = new google.maps.Marker({
+        position: {lat:50.573488, lng:19.522357},
+        map: map,
+        title: "Ścieżka przyrodnicza na terenie rezerwatu przyrody Góra Zborów"
+    });
+
+    marker2.addListener("click", function () {
+        infowindow.close();
+        infowindow2.open(map, marker2);
+    });
+}
+
