@@ -36,5 +36,35 @@
       height: 100%;
       width: 50%;
     }
+    .markerDeskription  {
+      font-size: .8rem;
+      width: 200px;
+      p   {
+        font-size: .8rem;
+        margin: 0;
+        padding: 0;
+        &:first-of-type {
+          font-size: 1rem;
+        }
+      }
+      a   {
+        color: inherit;
+      }
+    }
+  }
+
+  #legend {
+    font-family: $text-font;
+    background: #fff;
+    border: 3px solid #000;
+    width: 150px;
+    display: none;
+    div   {
+      margin: 5px 0;
+      font-size: .7rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }
