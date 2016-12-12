@@ -59,6 +59,12 @@ $("#buttonUp").click(function(){
     }
 });
 
+$("#scrollToMap").click(function(){
+        $("body").stop().animate({
+            scrollTop: 2000
+        }, 1000);
+});
+
 $('.categories').click(function() {
     $('.markedCategory').removeClass('markedCategory');
     $(this).addClass('markedCategory');

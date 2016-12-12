@@ -7,11 +7,43 @@
   @include mq-not-mobile  {
     background-position: center;
   }
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  span  {
+    cursor: pointer;
+    font-size: 2rem;
+    width: 100%;
+    font-family: $headers-font;
+    color: white;
+    font-weight: 800;
+    padding: 20px 50px 10px 50px;
+    background-color: #FF144C;
+    position: relative;
+    text-align: center;
+    @include mq-not-mobile  {
+      font-size: 3rem;
+      width: auto;
+      padding: 20px 20px 10px 20px;
+    }
+
+    &:before  {
+      width: 0;
+      height: 0;
+      position: absolute;
+      margin: 0 auto;
+      top: 0;
+      left: calc(50% - 15px);
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 30px solid white;
+      content: "";
+    }
+  }
 }
 
 .mapSection  {
-  z-index: 1000000;
-  display: flex;
   height: 100vh;
   text-align: center;
   align-items: center;
@@ -19,22 +51,12 @@
   @include laptops  {
     flex-direction: row;
   }
-  h2  {
-    width: 100%;
-    margin: 0;
-    padding: 10px;
-    @include laptops  {
-      width: 50%;
-      margin: 0;
-      padding: 0;
-    }
-  }
   .map   {
     height: 100%;
     width: 100%;
     @include laptops  {
       height: 100%;
-      width: 50%;
+      width: 100%;
     }
     .markerDeskription  {
       font-size: .8rem;

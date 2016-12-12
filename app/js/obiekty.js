@@ -336,7 +336,7 @@ var obiekty = [
 var icons   =   {
     wybraneGeostanowiska:    {
         name: "Wybrane geostanowiska",
-        icon: "images/markers/peak.png"
+        icon: "images/markers/fossils.png"
     },
     trasyPodziemne:  {
         name: "Trasy podziemne",
@@ -344,7 +344,7 @@ var icons   =   {
     },
     muzeaGeologiczneIDinoparki:    {
         name: "Muzea geologiczne, ośrodki edukacyjne i dinoparki",
-        icon: "images/markers/museum_archeological.png"
+        icon: "images/markers/museum_science.png"
     },
     obiektyPrzemysloweIPoprzemyslowe:   {
         name: "Obiekty przemysłowe i poprzemysłowe",
@@ -353,6 +353,10 @@ var icons   =   {
     uzdrowiskaIObiektyUzdrowiskowe: {
         name: "Uzdrowiska i obiekty uzdrowiskowe",
         icon: "images/markers/spa.png"
+    },
+    obszaryIObiektyChronione:   {
+        name: "Obszary i obiekty chronione",
+        icon: "images/markers/peak.png"
     },
     sciezkiDydaktyczne: {
         name: "Ścieżki dydaktyczne",

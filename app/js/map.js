@@ -177,14 +177,26 @@ function initMap() {
             lat: 50.277978,
             lng: 19.020544
         },
-        zoom: 9,
-        scrollwheel: true,
+        zoom: 8,
+        scrollwheel: false,
         draggable: true,
-        mapTypeId: "roadmap",
+        mapTypeId: "terrain",
         minZoom: 8,
+        fullscreenControl: true,
+        zoomControl: true,
+        zoomControlOptions: {
+          position: google.maps.ControlPosition.LEFT_BOTTOM
+        },
+        streetViewControl: true,
+        streetViewControlOptions: {
+            position: google.maps.ControlPosition.LEFT_BOTTOM
+        },
+        mapTypeControl: true,
         mapTypeControlOptions: {
-            mapTypeIds: ["roadmap", "satellite", "hybrid", "terrain", "styled_map"]
-        }
+            mapTypeIds: ["roadmap", "satellite", "hybrid", "terrain", "styled_map"],
+            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU
+        },
+        scaleControl: true
     };
 
 
@@ -194,7 +206,7 @@ function initMap() {
     map = new google.maps.Map(mapDiv, mapOptions);
 
     map.mapTypes.set("styled_map", styledMapType);
-    map.setMapTypeId("terrain");
+    // map.setMapTypeId("styled_map");
 
 
     var infowindow = new google.maps.InfoWindow();
