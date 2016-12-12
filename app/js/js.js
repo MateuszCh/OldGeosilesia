@@ -100,7 +100,7 @@ var ojciec;
 
 $(".galleries figure").click(function () {
     var fullMode = $("<section class='fullScreenMode'></section>");
-    fullMode.append($("<button id='closeFullScreenMode'>X</button>"));
+    fullMode.append($("<button id='closeFullScreenMode'><img src='../images/x-bialy.png'></button>"));
     ojciec = $(this);
     console.log(ojciec);
     var opis = $(ojciec).children("figcaption").children(".opis").text();
@@ -109,7 +109,7 @@ $(".galleries figure").click(function () {
     var moreText = $(ojciec).children("figcaption").children(".moreText").html();
     image = image.substring(0, image.length - 8);
     image += ".jpg";
-    var figure = $("<figure id='figura'><img id='fullScreenImage'><figcaption id='fullScreenFigcaption'><h3 id='fullScreenOpis'></h3><p id='fullScreenMore'></p><p id='fullScreenAuthor'></p></figcaption><span class='prevnext prev'><span>&lt;</span></span><span class='prevnext next'><span>&gt;</span></span></figure>");
+    var figure = $("<figure id='figura'><img id='fullScreenImage'><figcaption id='fullScreenFigcaption'><h3 id='fullScreenOpis'></h3><p id='fullScreenMore'></p><p id='fullScreenAuthor'></p></figcaption><span class='prevnext prev'><img src='../images/strzalka_biala.png'></span><span class='prevnext next'><img src='../images/strzalka_biala.png'></span></figure>");
 
     fullMode.append(figure);
     $("main").append(fullMode);

@@ -4,11 +4,11 @@
         <meta charset="UTF-8">
         <title>GeoSilesia</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet"href="css/main.css">
+        <link rel="stylesheet" href="css/main.css">
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header>
+        <header class="mainHeader">
             <div id="menu">
                 <span class="menu"></span>
             </div>
@@ -48,7 +48,7 @@
                     </figure>
                     <p>Szczegółowa informacja o budowie geologicznej województwa, wodach podziemnych, kopalinach i środowisku przedstawiona jest na seryjnych mapach geologicznych w skali 1:50 000. Skany map geologicznych, hydrogeologicznych i środowiskowych wraz z objaśnieniami tekstowymi dostępne są bezpłatnie w Portalu Centralnej Bazy Danych Geologicznych (CBDG). Baza prowadzona i rozbudowywana jest przez Państwowy Instytut Geologiczny-PIB. Te i inne dane geologiczne dostępne są również w aplikacji mobilnej GeoLOG, a także w formie usług WMS i WFS oraz plików SHP na Portalu CBDG.</p>
                 </section>
-                <section id="structure-2" class="structures">
+                <div id="structure-2" class="structures">
                     <section id="structure-2-1">
                         <h3>Wgłębna budowa geologiczna na powierzchni podkenozoicznej</h3>
                         <p>Jeszcze większe zróżnicowanie geologiczne województwa śląskiego obrazuje mapa geologiczna bez utworów kenozoiku (paleogenu, neogenu i czwartorzędu), gdzie pod Karpatami udokumentowano wierceniami zarówno utwory dewonu i karbonu jak i prekambru i kambr dolnego (ryc. 2).</p>
@@ -69,7 +69,7 @@
                             <img src="images/budowa/mapa_podpermska.png">
                             <figcaption>Ryc. 4. Jednostki tektoniczne na powierzchni podpermskiej<span>(wg Karnkowskiego 2008)</span></figcaption>
                         </figure>
-                        <section class="przekroj">
+                        <div class="przekroj">
                             <figure>
                                 <img src="images/budowa/przekroj_NS_2015_raster.jpg" alt="Przekrój geologiczny przez blok górnośląski oraz Górnośląskie Zagłębie Węglowe">
                                 <figcaption>Ryc. 5. Przekrój geologiczny przez blok górnośląski oraz Górnośląskie Zagłębie Węglowe (wg Buły i in. 2008, ze zmianami)
@@ -93,9 +93,9 @@
                                 <li>uskoki: SUKL – strefa uskokowa Kraków-Lubliniec</li>
                                 <li>nasunięcie płaszczowin karpackich</li>
                             </ol>
-                        </section>
+                        </div>
                     </section>
-                </section>
+                </div>
                 <section id="structure-3" class="structures">
                     <h3>Kopaliny</h3>
                     <p>W różnowiekowych skałach udokumentowanych na terenie województwa śląskiego, obok skamieniałości, struktur sedymentacyjnych i tektonicznych, występują liczne kopaliny i towarzyszące im minerały (patrz Gabzdyl, Hanak 2005; Gabzdyl, Gorol 2008; Różkowski 2008; Chybiorz, Tyc 2012; Chybiorz i in. 2015). </p>
@@ -124,7 +124,7 @@
                 </ul>
             </section>
         </main>
-        <button class="buttonUp" id="buttonUp"><a href="#">↑</a></button>
+        <button class="buttonUp" id="buttonUp">↑</button>
         <script src="js/js.js"></script>
     </body>
 </html>

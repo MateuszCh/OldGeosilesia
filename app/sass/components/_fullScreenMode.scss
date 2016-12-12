@@ -16,12 +16,13 @@ main  {
       top: 10px;
       color: white;
       background-color: transparent;
-      font-weight: 800;
-      font-size: 1.5rem;
       border: none;
-      height: 2rem;
-      width: 2rem;
+      height: 1.5rem;
+      width: 1.5rem;
       z-index: 100000000;
+      img   {
+        width: 100%;
+      }
       &:hover {
         color: lighten($header-color, 20%);
       }
@@ -59,29 +60,13 @@ main  {
             opacity: 1;
           }
         }
-        span  {
-          color: transparent;
-          @include laptops  {
-            background-color: black;
-            height: 20px;
-            width: 20px;
-            color: white;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 5px;
-            border-radius: 50%;
-            border: 2px solid white;
-          }
-
-        }
       }
       .prev {
         left: 0;
       }
       .next {
         right: 0;
+        transform: rotate(180deg);
       }
       img {
         max-width: 100%;

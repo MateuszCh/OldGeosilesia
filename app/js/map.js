@@ -177,7 +177,7 @@ function initMap() {
             lat: 50.277978,
             lng: 19.020544
         },
-        zoom: 8,
+        zoom: 9,
         scrollwheel: false,
         draggable: true,
         mapTypeId: "terrain",

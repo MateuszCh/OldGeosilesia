@@ -5,16 +5,10 @@
   bottom: 1.5rem;
   right: .75rem;
   border: none;
+  color: white;
+  cursor: pointer;
   background-color: $header-color;
   @include laptops  {
     display: none;
-  }
-
-  a   {
-    display: block;
-    text-decoration: none;
-    color: white;
-    line-height: 2.5rem;
-    height: 100%;
   }
 }

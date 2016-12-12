@@ -10,14 +10,14 @@ var obiekty = [
         category: "trasyPodziemne"
     },
     {
-        position: {lat:50.573488, lng:19.522357},
+        position: {lat:50.574331, lng:19.522621},
         title: 'Ścieżka przyrodnicza na terenie rezerwatu przyrody Góra Zborów',
         place: 'Podlesice, Gmina Kroczyce',
         www: 'http://www.podlesice.org.pl/podlesice1/',
         category: 'sciezkiDydaktyczne'
     },
     {
-        position: {lat:50.877867, lng:19.233780},
+        position: {lat:50.877535, lng:19.233106},
         title: 'Ścieżka dydaktyczna w kamieniołomie Lipówka ',
         place: 'Rudniki, ul .Dworcowa 15C',
         www: 'http://www.cemex.pl/kamieniolom-lipowka.aspx',
@@ -26,20 +26,20 @@ var obiekty = [
     {
         position: {lat:50.681461, lng:18.629606},
         title: 'Muzeum Paleontologiczne',
-        place: 'Lisowice, ul. Mickiewicza',
+        place: 'Lisowice, ul. Mickiewicza 20',
         www: 'http://muzeum.lisowice.com/',
         category: 'muzeaGeologiczneIDinoparki'
     },
     {
-        position: {lat:50.772891, lng:19.240594},
-        title: 'Ścieżka geoturystyczna w Górach Towarnych „W krainie białych skał”',
+        position: {lat:50.757984, lng:19.268618},
+        title: 'Ścieżka geoturystyczna w Górach Towarnych',
         place: 'Olsztyn, powiat częstochowski',
         www: 'http://jura.slaskie.travel/Trasy/Pokaz/8108/sciezka-geologiczna-w-krainie-bialych-skal/1247',
         category: 'sciezkiDydaktyczne'
     },
     {
-        position: {lat:50.752401, lng:19.278103},
-        title: 'Wirtualna ścieżka dydaktyczna Kamieniołom Kielniki „Na dnie jurajskiego morza”',
+        position: {lat:50.752308, lng:19.278467},
+        title: 'Wirtualna ścieżka dydaktyczna Kamieniołom Kielniki',
         place: 'Olsztyn, powiat częstochowski',
         www: 'http://geoportal.pgi.gov.pl/css/virtual/kielniki/sciezka.swf',
         category: 'sciezkiDydaktyczne'
@@ -61,7 +61,7 @@ var obiekty = [
     {
         position: {lat:50.296432, lng:18.798901},
         title: 'Sztolnia Królowa Luiza – Strefa podziemna',
-        place: 'Zabrze, ul. Sienkiewicza 43 (wjazd od ul. Mochnackiego) ',
+        place: 'Zabrze, ul. Sienkiewicza 43',
         www: 'http://www.sztolnialuiza.pl/index.php/park-12c-1',
         category: 'trasyPodziemne'
     },
@@ -115,14 +115,14 @@ var obiekty = [
         category: 'wybraneGeostanowiska'
     },
     {
-        position: {lat:50.327134, lng:19.129380},
+        position: {lat:50.325843, lng:19.133729},
         title: 'Podziemia będzińskie',
         place: 'Będzin, ul. Małachowskiego / Góra Zamkowa',
         www: 'http://muzeum.bedzin.pl/podziemia-b%C4%99dzi%C5%84skie',
         category: 'trasyPodziemne'
     },
     {
-        position: {lat:50.438519, lng:19.669850},
+        position: {lat:50.439148, lng:19.667091},
         title: 'Ośrodek edukacyjny ZPKWŚ ',
         place: 'Smoleń, Gmina Pilica',
         www: 'http://www.zpk.com.pl/index.php/osrodek-smolen',
@@ -200,20 +200,20 @@ var obiekty = [
     },
     {
         position: {lat:50.315801, lng:19.029369},
-        title: 'Dinopark',
+        title: 'Park dinozaurów',
         place: 'Siemianowice Śl., ul. Spacerowa',
         www: 'https://www.google.pl/search?q=dinozaury+siemianowice+slaskie&oq=dinozaury+siem&aqs=chrome.1.69i57j0.9730j0j4&sourceid=chrome&ie=UTF-8#q=park+dinozaur%C3%B3w+siemianowice,+siemianowice+%C5%9Bl%C4%85skie',
         category: 'muzeaGeologiczneIDinoparki'
     },
     {
-        position: {lat:49.724316, lng:8.825733},
+        position: {lat:49.720208, lng:18.825733},
         title: 'Uzdrowisko Ustroń – pijalnia wód i fontanna solankowa',
         place: 'Ustroń, ul. Sanatoryjna',
         www: 'http://www.uzdrowisko-ustron.pl/O-uzdrowisku/Atrakcje-Uzdrowiska-i-okolicy.html',
         category: 'uzdrowiskaIObiektyUzdrowiskowe'
     },
     {
-        position: {lat:49.941784, lng:18.976866},
+        position: {lat:49.937325, lng:18.980228},
         title: 'Uzdrowisko Goczałkowice, deptak Zdrojowy',
         place: 'Goczałkowice, ul. Uzdrowiskowa',
         www: 'http://www.info.goczalkowicezdroj.pl/warto-zobaczyc/zabytki/',
@@ -228,7 +228,7 @@ var obiekty = [
     },
     {
         position: {lat:50.055238, lng:18.478153},
-        title: 'Tężnia',
+        title: 'Tężnia solankowa',
         place: 'Radlin, ul. Wypandów',
         www: 'https://teznia.radlin.pl/',
         category: 'uzdrowiskaIObiektyUzdrowiskowe'
@@ -257,7 +257,7 @@ var obiekty = [
     {
         position: {lat:49.950263, lng:18.566710},
         title: 'Park Zdrojowy',
-        place: 'Jastrzębie Zdrój, ul. Witczaka',
+        place: 'Jastrzębie Zdrój, ul. Witczaka 5',
         www: 'http://jastrzebiezdroj.naszemiasto.pl/tag/inhalatorium-solankowe-jastrzebie.html',
         category: 'uzdrowiskaIObiektyUzdrowiskowe'
     },
@@ -318,7 +318,7 @@ var obiekty = [
         category: 'muzeaGeologiczneIDinoparki'
     },
     {
-        position: {lat:49.746407, lng:18.938818},
+        position: {lat:49.767549, lng:18.909748},
         title: 'Szlak szklany „ Jaworze Nałęże – ranczo Błatnia”',
         place: 'Jaworze, Dolina Jasionki',
         www: 'http://www.szklanym-szlakiem.jaworze.pl/strona_glowna',
@@ -330,6 +330,34 @@ var obiekty = [
         place: 'Dąbrowa Górnicza, ul. Legionów Polskich 69',
         www: 'http://muzeum-dabrowa.pl/',
         category: 'muzeaGeologiczneIDinoparki'
+    },
+    {
+        position: {lat:50.263505, lng:19.034892},
+        title: 'Muzeum Śląskie',
+        place: 'Katowice, ul. Dobrowolskiego 1',
+        www: 'http://www.muzeumslaskie.pl/',
+        category: 'obiektyPrzemysloweIPoprzemyslowe'
+    },
+    {
+        position: {lat:49.619821, lng:18.986288},
+        title: 'Kaskady Rodła w Rezerwacie Wisła',
+        place: 'Wisła, Biała Wisełka',
+        www: 'https://pl.wikipedia.org/wiki/Kaskady_Rod%C5%82a',
+        category: 'obszaryIObiektyChronione'
+    },
+    {
+        position: {lat:50.444508, lng:18.855449},
+        title: 'Gwarki tarnogórskie',
+        place: 'Tarnowskie Góry',
+        www: 'http://www.gwarki.tg.net.pl/',
+        category: 'inne'
+    },
+    {
+        position: {lat:50.264264, lng:19.023591},
+        title: 'Industriada',
+        place: 'Województwo Śląskie',
+        www: 'http://www.industriada.pl/',
+        category: 'inne'
     }
 ];
 
@@ -361,5 +389,9 @@ var icons   =   {
     sciezkiDydaktyczne: {
         name: "Ścieżki dydaktyczne",
         icon: "images/markers/walkingtour.png"
+    },
+    inne:   {
+        name: "inne",
+        icon: "images/markers/world.png"
     }
 };
