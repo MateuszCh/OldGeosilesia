@@ -5,8 +5,31 @@
 var previousSize = window.innerWidth;
 
 $(window).ready(function () {
-    $(".photos a").addClass("figuryUp");
-    $(".galleries figure").addClass("figuryUp");
+    function imgLoaded(imgElement) {
+        return imgElement.complete && imgElement.naturalHeight !== 0;
+    }
+    var zdjecia = $(".photos img");
+    $(zdjecia).on("load", function () {
+        for(var i = 0; i < zdjecia.length; i++ ){
+            $(this).parent().parent().addClass("figuryUp");
+        }
+    });
+    for(var g = 0; g < zdjecia.length; g++){
+        if(imgLoaded(zdjecia[g])){
+            $(zdjecia[g]).parent().parent().addClass("figuryUp");
+        }
+    }
+    var zdjecia2 = $(".galleries img");
+    $(zdjecia2).on("load", function () {
+        for(var i = 0; i < zdjecia2.length; i++){
+            $(this).parent().addClass("figuryUp");
+        }
+    });
+    for(var i = 0; i < zdjecia2.length; i++){
+        if(imgLoaded(zdjecia2[i])){
+            $(zdjecia2[i]).parent().addClass("figuryUp");
+        }
+    }
 });
 
 $("#menu").click(function () {
@@ -109,11 +132,17 @@ $(".galleries figure").click(function () {
     var moreText = $(ojciec).children("figcaption").children(".moreText").html();
     image = image.substring(0, image.length - 8);
     image += ".jpg";
-    var figure = $("<figure id='figura'><img id='fullScreenImage'><figcaption id='fullScreenFigcaption'><h3 id='fullScreenOpis'></h3><p id='fullScreenMore'></p><p id='fullScreenAuthor'></p></figcaption><span class='prevnext prev'><img src='../images/strzalka_biala.png'></span><span class='prevnext next'><img src='../images/strzalka_biala.png'></span></figure>");
+    var figure = $("<figure id='figura'><div><img id='fullScreenImage'><div class='loader'></div></div><figcaption id='fullScreenFigcaption'><h3 id='fullScreenOpis'></h3><p id='fullScreenMore'></p><p id='fullScreenAuthor'></p></figcaption><span class='prevnext prev'><img src='../images/strzalka_biala.png'></span><span class='prevnext next'><img src='../images/strzalka_biala.png'></span></figure>");
+
 
     fullMode.append(figure);
     $("main").append(fullMode);
-    $("#fullScreenImage").attr("src", image);
+    $("#fullScreenImage").attr("src", image).on("load", function () {
+        setTimeout(function () {
+            $("#figura").addClass("up");
+        }, 10);
+
+    });;
     $("#fullScreenOpis").text(opis);
     $("#fullScreenMore").html(moreText);
     $("#fullScreenAuthor").text(author);
@@ -124,12 +153,10 @@ $(".galleries figure").click(function () {
         });
 
     });
-    setTimeout(function () {
-        $("#figura").addClass("up");
-    }, 10);
 
 
     $(".prevnext").click(function () {
+        $(".loader").show();
         if($(this).hasClass("prev")){
             if($(ojciec).prevAll("figure").length != 0){
                 ojciec = $(ojciec).prev();
@@ -166,19 +193,25 @@ $(".galleries figure").click(function () {
 });
 
 function change(ojciec) {
-    console.log(ojciec);
     var image = $(ojciec).children("img").attr("src");
-    console.log(image);
     image = image.substring(0, image.length - 8);
     image += ".jpg";
     var opis = $(ojciec).children("figcaption").children(".opis").text();
     var author = $(ojciec).children("figcaption").children(".authorAndDate").text();
     var moreText = $(ojciec).children("figcaption").children(".moreText").html();
-    $("#fullScreenImage").attr("src", image);
-    $("#fullScreenOpis").text(opis);
-    $("#fullScreenMore").html(moreText);
-    $("#fullScreenAuthor").text(author);
-    console.log(opis);
+    $("#fullScreenImage").attr("src", image).on("load", function () {
+        $("#fullScreenOpis").text(opis);
+        $("#fullScreenMore").html(moreText);
+        $("#fullScreenAuthor").text(author);
+        $(".loader").hide();
+    });
+
+    // $("#fullScreenImage").on("load", function () {
+    //     $("#fullScreenOpis").text(opis);
+    //     $("#fullScreenMore").html(moreText);
+    //     $("#fullScreenAuthor").text(author);
+    //     $(".loader").hide();
+    // });
 }
 
 $(".head").click(function () {
@@ -196,9 +229,9 @@ $(".tabs li").click(function () {
     $(this).addClass("selectedTab");
     $(".structures").each(function () {
        if($(this).attr("id") == tabClass){
-           $(this).show();
+           $(this).slideDown(500);
        } else {
-           $(this).hide();
+           $(this).slideUp(500);
        }
     });
 });
