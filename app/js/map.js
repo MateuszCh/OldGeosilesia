@@ -185,11 +185,11 @@ function initMap() {
         fullscreenControl: true,
         zoomControl: true,
         zoomControlOptions: {
-          position: google.maps.ControlPosition.LEFT_BOTTOM
+          position: google.maps.ControlPosition.RIGHT_TOP
         },
         streetViewControl: true,
         streetViewControlOptions: {
-            position: google.maps.ControlPosition.LEFT_BOTTOM
+            position: google.maps.ControlPosition.RIGHT_TOP
         },
         mapTypeControl: true,
         mapTypeControlOptions: {
