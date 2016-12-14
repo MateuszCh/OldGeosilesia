@@ -1,8 +1,8 @@
 .news {
   article   {
-    padding: 10px 10px 10px 10px;
+    padding: .625rem;
     background-color: #ddd;
-    margin: 10px;
+    margin: .625rem;
     transition: all .5s ease-in-out;
     font-family: $text-font;
     color: #666;
@@ -10,7 +10,6 @@
       display: block;
     }
     &.border  {
-      //background-color: #DF2D4E;
       background-color: darken($color3, 15%);
       color: white;
       h3,
@@ -18,13 +17,12 @@
         color: white;
       }
     }
-
     p   {
       transition: all .5s ease-in-out;
     }
     a   {
       color: inherit;
-      padding: 0 10px;
+      padding: 0 .625rem;
     }
     h3  {
       color: darken($text-color, 10%);
@@ -41,7 +39,7 @@
     }
     .body {
       display: none;
-      padding: 10px 10px;
+      padding: .625rem;
     }
   }
 }

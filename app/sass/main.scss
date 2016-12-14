@@ -2,18 +2,17 @@
 @import "base/fonts";
 @import 'helpers/variables';
 @import "helpers/mixins";
-@import 'helpers/placeholders';
+@import "helpers/animation";
 @import "base/general";
-
 @import 'layout/header';
 @import 'components/nav';
-@import "components/mainPage";
+@import "pages/mainPage";
 @import "components/buttonUp";
-@import "components/gallery";
-@import "components/geoslask";
-@import "components/about";
-@import "components/news";
-@import "components/galleries";
+@import "pages/gallery";
+@import "pages/geoslask";
+@import "pages/about";
+@import "pages/news";
+@import "pages/galleries";
 @import "components/fullScreenMode";
 @import "components/lists";
 

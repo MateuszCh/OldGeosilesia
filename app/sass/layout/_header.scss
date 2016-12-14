@@ -5,83 +5,67 @@
   background-color: $header-color;
   color: white;
   box-shadow: 0 3px 5px 1px darken($header-color, 20%);
-  z-index: 1000;
-
-  #menu {
+  z-index: 10;
+  @include laptops  {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  h1  {
+    text-align: center;
+    font-family: $headers-font;
+    font-size: 3rem;
+    margin: .5rem;
+    @include laptops  {
+      font-size: 5rem;
+    }
+    a   {
+      color:white;
+      text-decoration: none;
+    }
+  }
+  &>div {
     cursor: pointer;
     position: absolute;
     top:1.875rem;
     right: 1.25rem;
     width: 1.5625rem;
     height: 1.125rem;
-  }
-
-
-
-  div.expanded .menu  {
-    background-color: transparent;
-  }
-
-  div.expanded .menu:after  {
-    transform: rotate(45deg);
-  }
-
-  div.expanded .menu:before  {
-    transform: rotate(-45deg);
-    top: 7px;
-  }
-
-  .menu {
-    height: 0.125rem;
-    width: 1.5625rem;
-    background-color: white;
-    display: block;
-    transition: all .2s ease-in-out;
-    @include mq-not-mobile  {
-      display: none;
+    &.expanded .menu  {
+      background-color: transparent;
     }
-  }
-
-  .menu:after {
-    top: 0.4375rem;
-  }
-
-  .menu:after,
-  .menu:before  {
-    height: 0.125rem;
-    width: 1.5625rem;
-    background-color: white;
-    position: absolute;
-    display: block;
-    content: "";
-    transition: all .2s ease-in-out;
-  }
-
-  .menu:before {
-    top: 0.875rem;
-  }
-
-  @include laptops  {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-
-
-    h1  {
-      text-align: center;
-      font-family: $headers-font;
-      font-size: 3rem;
-      margin: .5rem;
-      @include laptops  {
-        font-size: 5rem;
+    &.expanded .menu:after  {
+      transform: rotate(45deg);
+    }
+    &.expanded .menu:before  {
+      transform: rotate(-45deg);
+      top: 7px;
+    }
+    .menu {
+      height: 0.125rem;
+      width: 1.5625rem;
+      background-color: white;
+      display: block;
+      transition: all .2s ease-in-out;
+      @include mq-not-mobile  {
+        display: none;
       }
-
-      a   {
-        color:white;
-        text-decoration: none;
+      &:after {
+        top: 0.4375rem;
+      }
+      &:before {
+        top: 0.875rem;
+      }
+      &:after,
+      &:before  {
+        height: 0.125rem;
+        width: 1.5625rem;
+        background-color: white;
+        position: absolute;
+        display: block;
+        content: "";
+        transition: all .2s ease-in-out;
       }
     }
-
-
+  }
 }

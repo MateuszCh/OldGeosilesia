@@ -17,14 +17,11 @@
     }
     li  {
       flex-grow: 1;
-      padding: 5px;
+      padding: .3125rem;
       color: white;
-      border: 2px solid $header-color;
+      border: .125rem solid $header-color;
       font-family: $text-font;
-      align-items: center;
       text-align: center;
-      justify-content: center;
-      display: flex;
       font-size: .9rem;
       transition: all .3s ease-in-out;
       cursor: pointer;
@@ -32,11 +29,8 @@
         font-size: 1rem;
         border: none;
       }
-      &:hover   {
-        background-color: white;
-        color: $header-color;
-      }
-      &.selectedTab {
+      &:hover,
+      &.selectedTab{
         background-color: white;
         color: $header-color;
       }
@@ -44,8 +38,7 @@
   }
   .structures {
     background-color: white;
-    padding: 10px 5px;
-
+    padding: .625rem .3125rem;
     .przekroj  {
       @include laptops  {
         figure  {
@@ -53,7 +46,7 @@
         }
       }
       @include laptopsForPrzekroj{
-        margin-top: 20px;
+        margin-top: 1.25rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -70,25 +63,13 @@
       list-style-position: inside;
       font-family: $text-font;
       color: $text-color;
-      line-height: 20px;
+      line-height: 1.25rem;
       font-size: .7rem;
       @include mq-not-mobile  {
         font-size: .8rem;
       }
     }
-    figcaption  {
-      font-size: .7rem;
-      font-family: $text-font;
-      color: $text-color;
-      text-align: center;
-      font-weight: 800;
-      span  {
-        display: block;
-      }
-      @include mq-not-mobile  {
-        font-size: .9rem;
-      }
-    }
+
     h3  {
       font-size: 1.5rem;
       font-family: $headers-font;
@@ -97,7 +78,7 @@
     }
     figure  {
       width: 100%;
-      margin: 10px 0;
+      margin: .625rem 0;
       &.sto {
         @include mq-not-mobile  {
           width: 100%;
@@ -117,6 +98,19 @@
       }
       img {
         width: 100%;
+      }
+      figcaption  {
+        font-size: .7rem;
+        font-family: $text-font;
+        color: $text-color;
+        text-align: center;
+        font-weight: 800;
+        span  {
+          display: block;
+        }
+        @include mq-not-mobile  {
+          font-size: .9rem;
+        }
       }
     }
   }

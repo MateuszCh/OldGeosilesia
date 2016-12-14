@@ -1,6 +1,5 @@
 .mainNav li.active   {
   background-color: lighten($header-color, 20%);
-  //color: darken($header-color, 10%)
   ul li   {
     background-color: $header-color;
     @include mq-not-mobile  {
@@ -51,10 +50,10 @@
       padding-left: .5rem;
       font-size: 1.2rem;
       @include mq-not-mobile  {
-        padding: .5rem 28px;
+        padding: .5rem 1.75rem;
       }
       @include laptops  {
-        padding: 42px 28px;
+        padding: 2.625rem 1.75rem;
       }
     }
   }
@@ -69,7 +68,6 @@
     display: none;
     @include mq-not-mobile  {
       position: absolute;
-
       color: white;
       width: 100%;
       left: 0;
@@ -85,10 +83,10 @@
     }
     li  {
       transition: all .2s ease-in-out;
-      padding: 3px 0;
+      padding: 0.1875rem 0;
       @include mq-not-mobile  {
         background-color: lighten($header-color, 10%);
-        padding: 5px 0;
+        padding: .3125rem 0;
         width: 100%;
         &:hover   {
           background-color: white;

@@ -122,7 +122,7 @@ $('.categories').click(function() {
 var ojciec;
 
 $(".galleries figure").click(function () {
-    var fullMode = $("<section class='fullScreenMode'></section>");
+    var fullMode = $("<div class='fullScreenMode'></div>");
     fullMode.append($("<button id='closeFullScreenMode'><img src='../images/x-bialy.png'></button>"));
     ojciec = $(this);
     console.log(ojciec);
@@ -132,17 +132,20 @@ $(".galleries figure").click(function () {
     var moreText = $(ojciec).children("figcaption").children(".moreText").html();
     image = image.substring(0, image.length - 8);
     image += ".jpg";
-    var figure = $("<figure id='figura'><img id='fullScreenImage'><figcaption id='fullScreenFigcaption'><h3 id='fullScreenOpis'></h3><p id='fullScreenMore'></p><p id='fullScreenAuthor'></p></figcaption><span class='prevnext prev'><img src='../images/strzalka_biala.png'></span><span class='prevnext next'><img src='../images/strzalka_biala.png'></span><div class='loader'></div></figure>");
+    var figure = $("<figure id='figura'><img id='fullScreenImage'><figcaption id='fullScreenFigcaption'><h3 id='fullScreenOpis'></h3><p id='fullScreenMore'></p><p id='fullScreenAuthor'></p></figcaption><span class='prevnext prev'><img src='../images/strzalka_050.png'></span><span class='prevnext next'><img src='../images/strzalka_050.png'></span></figure>");
 
+    var loader = $("<div class='loadingPhoto'></div>");
 
+    fullMode.append(loader);
     fullMode.append(figure);
     $("main").append(fullMode);
     $("#fullScreenImage").attr("src", image).on("load", function () {
         setTimeout(function () {
+            $(".loadingPhoto").hide();
             $("#figura").addClass("up");
         }, 10);
 
-    });;
+    });
     $("#fullScreenOpis").text(opis);
     $("#fullScreenMore").html(moreText);
     $("#fullScreenAuthor").text(author);
@@ -156,7 +159,7 @@ $(".galleries figure").click(function () {
 
 
     $(".prevnext").click(function () {
-        $(".loader").show();
+        $(".loadingPhoto").show();
         if($(this).hasClass("prev")){
             if($(ojciec).prevAll("figure").length != 0){
                 ojciec = $(ojciec).prev();
@@ -203,15 +206,8 @@ function change(ojciec) {
         $("#fullScreenOpis").text(opis);
         $("#fullScreenMore").html(moreText);
         $("#fullScreenAuthor").text(author);
-        $(".loader").hide();
+        $(".loadingPhoto").hide();
     });
-
-    // $("#fullScreenImage").on("load", function () {
-    //     $("#fullScreenOpis").text(opis);
-    //     $("#fullScreenMore").html(moreText);
-    //     $("#fullScreenAuthor").text(author);
-    //     $(".loader").hide();
-    // });
 }
 
 $(".head").click(function () {
