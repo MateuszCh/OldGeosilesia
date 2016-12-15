@@ -2,7 +2,6 @@
  * Created by Mateusz Chybiorz on 2016-12-11.
  */
 function initMap() {
-
     var styledMapType = new google.maps.StyledMapType(
         [
             {
@@ -165,13 +164,6 @@ function initMap() {
             }
         ],{name: 'Styled Map'});
 
-
-
-
-
-
-    var mapDiv = document.getElementById("map");
-
     var mapOptions =    {
         center: {
             lat: 50.277978,
@@ -198,29 +190,19 @@ function initMap() {
         },
         scaleControl: true
     };
-
-
-
+    var mapDiv = document.getElementById("map");
     var map, marker, i;
-
     map = new google.maps.Map(mapDiv, mapOptions);
-
     map.mapTypes.set("styled_map", styledMapType);
-    // map.setMapTypeId("styled_map");
-
-
     var infowindow = new google.maps.InfoWindow();
 
     for (i = 0; i < obiekty.length; i++) {
-
-
         marker = new google.maps.Marker({
             position: obiekty[i].position,
             map: map,
             title: obiekty[i].title,
             icon: icons[obiekty[i].category].icon
         });
-
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
                 infowindow.setContent("<div class='markerDeskription'><p>" + obiekty[i].title + "</p><p>" + obiekty[i].place + "</p><a href=" + obiekty[i].www + ">Więcej</a></div>");
