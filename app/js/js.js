@@ -12,7 +12,6 @@
     var galleryPhotos = $(".photos a");
     var sizeOfHeader = $("header").height();
     var previousSize = window.innerWidth;
-    var ojciec;
 
     $(window).ready(function () {
         var gallery = $(".photos img");
@@ -42,24 +41,6 @@
         });
     });
 
-    menuHam.on("click", function () {
-        if(window.matchMedia('(max-width: 767px)').matches){
-            $(mainNav).slideToggle(200);
-            $(geoSlaskNav).slideUp(0);
-        }
-        if($(this).hasClass("expanded")){
-            $(this).removeClass("expanded");
-        } else  {
-            $(this).addClass("expanded");
-        }
-    });
-
-    secondNav.on("click", function () {
-        if(window.matchMedia('(max-width: 1199px)').matches) {
-            $(geoSlaskNav).slideToggle(150);
-        }
-    });
-
     $(window).on("resize", function () {
         sizeOfHeader = $("header").height();
         var currentSize = window.innerWidth;
@@ -76,6 +57,37 @@
             }
         }
         previousSize = currentSize;
+    });
+
+    $(window).on("scroll", function () {
+        if(document.getElementById("map")){
+            var scrollTopOfMap  = $("#map")[0].scrollHeight;
+            var scrollTopWindow =   $(window).scrollTop();
+            var diff = scrollTopOfMap - sizeOfHeader;
+            if(scrollTopWindow > diff && scrollTopOfMap){
+                $("header").slideUp(500);
+            } else {
+                $("header").slideDown(100);
+            }
+        }
+    });
+
+    menuHam.on("click", function () {
+        if(window.matchMedia('(max-width: 767px)').matches){
+            $(mainNav).slideToggle(200);
+            $(geoSlaskNav).slideUp(0);
+        }
+        if($(this).hasClass("expanded")){
+            $(this).removeClass("expanded");
+        } else  {
+            $(this).addClass("expanded");
+        }
+    });
+
+    secondNav.on("click", function () {
+        if(window.matchMedia('(max-width: 1199px)').matches) {
+            $(geoSlaskNav).slideToggle(150);
+        }
     });
 
     $("#buttonUp").on("click", function () {
@@ -123,16 +135,15 @@
     });
 
     $(".head").on("click", function () {
-        var brat  = $(this).next();
-        $(".body").not(brat).slideUp(400).parent().removeClass("border");
-        $(brat).slideToggle(400);
+        var sibling  = $(this).next();
+        $(".body").not(sibling).slideUp(400).parent().removeClass("border");
+        $(sibling).slideToggle(400);
         $(this).parent().toggleClass("border");
     });
 
     $(".tabs li").on("click", function () {
         var tabClass = $(this).attr("class");
         tabClass = tabClass.substring(0, 11);
-        console.log(tabClass);
         $(".tabs li").removeClass("selectedTab");
         $(this).addClass("selectedTab");
         $(".structures").each(function () {
@@ -144,22 +155,8 @@
         });
     });
 
-    $(window).on("scroll", function () {
-        if(document.getElementById("map")){
-            var scrollTopOfMap  = $("#map")[0].scrollHeight;
-            var scrollTopWindow =   $(window).scrollTop();
-            var diff = scrollTopOfMap - sizeOfHeader;
-            if(scrollTopWindow > diff && scrollTopOfMap){
-                $("header").slideUp(500);
-            } else {
-                $("header").slideDown(100);
-            }
-        }
-    });
-
-
     $(".galleries figure").on("click", function () {
-        ojciec = $(this);
+        var ojciec = $(this);
         var fullMode = $("<div class='fullScreenMode'></div>");
         var opis = $(ojciec).children("figcaption").children(".opis").text();
         var image = $(ojciec).children("img").attr("src");
@@ -175,16 +172,12 @@
         fullMode.append(figure);
         $("main").append(fullMode);
         $("#fullScreenImage").attr("src", image).on("load", function () {
-            setTimeout(function () {
                 $(".loadingPhoto").hide();
                 $("#figura").addClass("up");
-            }, 10);
-
         });
         $("#fullScreenOpis").text(opis);
         $("#fullScreenMore").html(moreText);
         $("#fullScreenAuthor").text(author);
-
 
         $("#closeFullScreenMode").on("click", function () {
             $(".fullScreenMode").slideUp(500, function () {
@@ -237,10 +230,3 @@
         });
     });
 })(jQuery);
-
-
-
-
-
-
-
