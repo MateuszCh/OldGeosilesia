@@ -359,6 +359,111 @@ function initMap() {
             place: 'Województwo Śląskie',
             www: 'http://www.industriada.pl/',
             category: 'inne'
+        },
+        {
+            position: {lat:50.678225, lng:18.644894},
+            title: 'Glinianka w Lisowicach (Lipiu Śląskim)',
+            place: 'Lubliniec, ul. Cegielniana',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=707',
+            category: 'geostanowiskaMiedzynarodowe'
+        },
+        {
+            position: {lat:49.657494, lng:18.982282},
+            title: 'Jaskinia Malinowska Pomnik przyrody',
+            place: 'Gmina Wisła',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=733',
+            category: 'geostanowiskaMiedzynarodowe'
+        },
+        {
+            position: {lat:49.648888 , lng:18.992777},
+            title: 'Jaskinia Miecharska Stanowisko dokumentacyjne',
+            place: 'Gmina Wisła',
+            www: '://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=637',
+            category: 'geostanowiskaMiedzynarodowe'
+        },
+        {
+            position: {lat:49.665277, lng:18.957500},
+            title: 'Jaskinia Wiślańska Stanowisko dokumentacyjne',
+            place: 'Gmina Brenna, Przełęcz Salmopolska',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=1412',
+            category: 'geostanowiskaMiedzynarodowe'
+        },
+        {
+            position: {lat:50.797718, lng:.050711},
+            title: 'Glinianka iłów środkowojurajskich Gnaszyn w Częstochowie',
+            place: 'Częstochowa, ul. Tatrzańska 3',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9219',
+            category: 'geostanowiskaMiedzynarodowe'
+        },
+        {
+            position: {lat:50.494523, lng:19.380730},
+            title: 'Hałda utworów górnotriasowych w Zawierciu - Marciszowie',
+            place: 'Zawiercie, ul. Podmiejska',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9554',
+            category: 'geostanowiskaMiedzynarodowe'
+        },
+        {
+            position: {lat:50.6615832, lng:19.484227},
+            title: 'Jaskinia Stajnia',
+            place: 'Bobolice, gm. Niegowa',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=10096',
+            category: 'geostanowiskaMiedzynarodowe'
+        },
+        {
+            position: {lat:50.546111, lng:19.532777},
+            title: 'Jaskinia w Dziadowej Skale k/Podlesic',
+            place: 'Gmina Kroczyce',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9378',
+            category: 'geostanowiskaMiedzynarodowe'
+        },
+        {
+            position: {lat:50.572777, lng:19.518611},
+            title: 'Jaskinia Żabia',
+            place: 'Gmina Kroczyce',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9371',
+            category: 'geostanowiskaMiedzynarodowe'
+        },
+        {
+            position: {lat:.931638, lng:19.011936},
+            title: 'Kamieniołom wapieni górnojurajskich w Łobodnie (nieczynny)',
+            place: 'Łobodno, gm. Kłobuck',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9570',
+            category: 'geostanowiskaMiedzynarodowe'
+        },
+        {
+            position: {lat:50.504768, lng:19.368913},
+            title: 'Odsłonięcie utworów triasu górnego w Porębie',
+            place: 'Poręba, ul. Partyzantów',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9376',
+            category: 'geostanowiskaMiedzynarodowe'
+        },
+        {
+            position: {lat:50.439185, lng:19.521302},
+            title: 'Odsłonięcie utworów środkowojurajskich Ogrodzieniec - Świertowiec',
+            place: 'Gmina Ogrodzieniec',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9373',
+            category: 'geostanowiskaMiedzynarodowe'
+        },
+        {
+            position: {lat:49.780585, lng:18.646307},
+            title: 'Sill cieszynitu teralitowego w Zamarskach - Rudowie',
+            place: 'Zamarski, ul. Kamienna',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9721',
+            category: 'geostanowiskaMiedzynarodowe'
+        },
+        {
+            position: {lat:49.837137, lng:18.919720},
+            title: 'Sill pikrytowy ze skarnem pektolitowym w Miedzyrzeczu Górnym',
+            place: 'Międzyrzecze Górne, gm. Jasienica',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9668',
+            category: 'geostanowiskaMiedzynarodowe'
+        },
+        {
+            position: {lat:49.835494, lng:18.628023},
+            title: 'Żwirownia w Kończycach Wielkich',
+            place: 'Kończyce Wielkie, gm. Hażlach',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9381',
+            category: 'geostanowiskaMiedzynarodowe'
         }
     ];
 
@@ -394,6 +499,10 @@ function initMap() {
         inne:   {
             name: "inne",
             icon: "images/markers/world.png"
+        },
+        geostanowiskaMiedzynarodowe:    {
+            name: "Geostanowiska międzynarodowe",
+            icon: "images/markers/world_geostanowiska.png"
         }
     };
 

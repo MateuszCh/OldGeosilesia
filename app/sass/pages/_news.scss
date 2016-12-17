@@ -10,7 +10,7 @@
       display: block;
     }
     &.border  {
-      background-color: darken($color3, 15%);
+      background-color: $color3;
       color: white;
       h3,
       p   {
