@@ -228,5 +228,17 @@
                 $("#closeFullScreenMode").click();
             }
         });
+        $("#fullScreenImage").swipe({
+            swipe:function (event, direction) {
+                switch(direction){
+                    case "left":
+                        $(".next").click();
+                        break;
+                    case "right":
+                        $(".prev").click();
+                        break;
+                }
+            }
+        });
     });
 })(jQuery);

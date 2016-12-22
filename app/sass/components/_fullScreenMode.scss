@@ -45,7 +45,7 @@ main  {
         position: absolute;
         background-color: transparent;
         width: 25%;
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
         top: 0;
@@ -53,6 +53,7 @@ main  {
         opacity: 0;
         transition: opacity .2s ease-in-out;
         @include laptops  {
+          display: flex;
           opacity: 0;
           background-color: rgba(#fff, .2);
           &:hover {
