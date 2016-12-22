@@ -39,6 +39,13 @@
   .structures {
     background-color: white;
     padding: .625rem .3125rem;
+    a   {
+      display: inline-block;
+      color: inherit;
+      &:hover {
+        color: red;
+      }
+    }
     .przekroj  {
       @include laptops  {
         figure  {
