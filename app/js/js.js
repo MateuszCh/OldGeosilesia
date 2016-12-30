@@ -2,6 +2,8 @@
  * Created by Mateusz Chybiorz on 2016-11-26.
  */
 (function ($) {
+    //variables
+    //jquery objects
     var body = $("body");
     var menuHam = $("#menu");
     var secondNav = $("#secondNav");
@@ -10,12 +12,14 @@
     var pierwszaLista = document.getElementById("mainNav");
     var drugaLista = document.getElementById("geoSlaskNav");
     var galleryPhotos = $(".photos a");
+    //variables used to hide and show header on main page
     var sizeOfHeader = $("header").height();
     var previousSize = window.innerWidth;
-
+    //show image when fully loaded
     $(window).ready(function () {
         var gallery = $(".photos img");
         var galleries = $(".galleries img");
+        //check if image is loaded
         function imgLoaded(imgElement) {
             return imgElement.complete && imgElement.naturalHeight !== 0;
         }
@@ -40,7 +44,7 @@
             }
         });
     });
-
+    //hide menu when on window resize
     $(window).on("resize", function () {
         sizeOfHeader = $("header").height();
         var currentSize = window.innerWidth;
@@ -58,7 +62,7 @@
         }
         previousSize = currentSize;
     });
-
+    //show and hide header on main page when map is visible
     $(window).on("scroll", function () {
         if(document.getElementById("map")){
             var scrollTopOfMap  = $("#map")[0].scrollHeight;
@@ -71,7 +75,7 @@
             }
         }
     });
-
+    //hamburger event listener
     menuHam.on("click", function () {
         if(window.matchMedia('(max-width: 767px)').matches){
             $(mainNav).slideToggle(200);
@@ -83,13 +87,13 @@
             $(this).addClass("expanded");
         }
     });
-
+    //geoslask menu hide and show event listener
     secondNav.on("click", function () {
         if(window.matchMedia('(max-width: 1199px)').matches) {
             $(geoSlaskNav).slideToggle(150);
         }
     });
-
+    //animation for up button
     $("#buttonUp").on("click", function () {
         if($(body).scrollTop() > 0){
             $(body).stop().animate({
@@ -97,13 +101,13 @@
             }, 500);
         }
     });
-
+    //animation for scroll to map
     $("#scrollToMap").on("click", function () {
         $("body").stop().animate({
             scrollTop: 2000
         }, 1000);
     });
-
+    //show selected category of galleries
     $(".categories").on("click", function () {
         $('.markedCategory').removeClass('markedCategory');
         $(this).addClass('markedCategory');
@@ -133,14 +137,14 @@
             }, 501);
         }
     });
-
+    //show clicked event, hide all other
     $(".head").on("click", function () {
         var sibling  = $(this).next();
         $(".body").not(sibling).slideUp(400).parent().removeClass("border");
         $(sibling).slideToggle(400);
         $(this).parent().toggleClass("border");
     });
-
+    //show subsection in geoslask
     $(".tabs li").on("click", function () {
         var tabClass = $(this).attr("class");
         tabClass = tabClass.substring(0, 11);
@@ -154,7 +158,7 @@
             }
         });
     });
-
+    //event listener for entering full screen mode for galleries
     $(".galleries figure").on("click", function () {
         var ojciec = $(this);
         var fullMode = $("<div class='fullScreenMode'></div>");
@@ -166,12 +170,12 @@
         var moreText = $(ojciec).children("figcaption").children(".moreText").html();
         var figure = $("<figure id='figura'><img id='fullScreenImage'><figcaption id='fullScreenFigcaption'><h3 id='fullScreenOpis'></h3><p id='fullScreenMore'></p><p id='fullScreenAuthor'></p></figcaption><span class='prevnext prev'><img src='../images/strzalka_050.png'></span><span class='prevnext next'><img src='../images/strzalka_050.png'></span></figure>");
         var loader = $("<div class='loadingPhoto'></div>");
-
         fullMode.append($("<button id='closeFullScreenMode'><img src='../images/x-bialy.png'></button>"));
         fullMode.append(loader);
         fullMode.append(figure);
         $("main").append(fullMode);
-        $("#fullScreenImage").attr("src", image).on("load", function () {
+        var fullScreenImage = $("#fullScreenImage");
+        $(fullScreenImage).attr("src", image).on("load", function () {
                 $(".loadingPhoto").hide();
                 $("#figura").addClass("up");
         });
@@ -185,7 +189,7 @@
             });
             $(document).off("keydown");
         });
-
+        //event listener - click on previous and next buttons
         $(".prevnext").on("click", function () {
             $(".loadingPhoto").show();
             if($(this).hasClass("prev")){
@@ -207,14 +211,14 @@
             var opis = $(ojciec).children("figcaption").children(".opis").text();
             var author = $(ojciec).children("figcaption").children(".authorAndDate").text();
             var moreText = $(ojciec).children("figcaption").children(".moreText").html();
-            $("#fullScreenImage").attr("src", image).on("load", function () {
+            $(fullScreenImage).attr("src", image).on("load", function () {
                 $("#fullScreenOpis").text(opis);
                 $("#fullScreenMore").html(moreText);
                 $("#fullScreenAuthor").text(author);
                 $(".loadingPhoto").hide();
             });
         });
-
+        //changing images by keyboard
         $(document).on("keydown", function (e) {
             var code = e.keyCode || e.which;
             if(code == 37){
@@ -228,7 +232,8 @@
                 $("#closeFullScreenMode").click();
             }
         });
-        $("#fullScreenImage").swipe({
+        //changing images by swipe
+        $(fullScreenImage).swipe({
             swipe:function (event, direction) {
                 switch(direction){
                     case "left":

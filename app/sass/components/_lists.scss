@@ -12,6 +12,14 @@
     }
   }
 }
+.listOfFootnotes {
+  @extend .listOfSources;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  @include mq-not-mobile  {
+    padding: 0 0.625rem;
+  }
+}
 .discList  {
   list-style-type: disc;
   list-style-position: outside;
