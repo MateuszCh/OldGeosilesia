@@ -4,9 +4,9 @@
   }
   &>ul {
     display: flex;
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
-    background-color: $header-color;
+    background-color: $color3;
     flex-direction: column;
     @include landscapePhone {
       flex-direction: row;
@@ -19,7 +19,7 @@
       flex-grow: 1;
       padding: .3125rem;
       color: white;
-      border: .125rem solid $header-color;
+      border: .125rem solid $color3;
       font-family: $text-font;
       text-align: center;
       font-size: .9rem;
@@ -110,7 +110,7 @@
         font-family: $text-font;
         color: $text-color;
         text-align: center;
-        font-weight: 800;
+        padding: 1rem;
         span  {
           display: block;
         }
