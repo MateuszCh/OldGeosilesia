@@ -9,8 +9,6 @@
     var secondNav = $("#secondNav");
     var mainNav = $("#mainNav");
     var geoSlaskNav = $("#geoSlaskNav");
-    var pierwszaLista = document.getElementById("mainNav");
-    var drugaLista = document.getElementById("geoSlaskNav");
     var galleryPhotos = $(".photos a");
     //variables used to hide and show header on main page
     var sizeOfHeader = $("header").height();
@@ -49,12 +47,12 @@
         sizeOfHeader = $("header").height();
         var currentSize = window.innerWidth;
         if((previousSize <= 768 && currentSize > 768) || (previousSize <= 1200 && currentSize > 1200)){
-            if(pierwszaLista.style.display){
+            if($(mainNav).css("display")){
                 $(geoSlaskNav).slideUp(0);
-                pierwszaLista.style.removeProperty("display");
+                $(mainNav).attr("style", " ");
             }
-            if(drugaLista.style.display){
-                drugaLista.style.removeProperty("display");
+            if($(geoSlaskNav).css("display")){
+                $(geoSlaskNav).attr("style", " ");
             }
             if($(menuHam).hasClass("expanded")){
                 $(menuHam).removeClass("expanded");
@@ -95,15 +93,13 @@
     });
     //animation for up button
     $("#buttonUp").on("click", function () {
-        if($(body).scrollTop() > 0){
-            $(body).stop().animate({
+            $("html, body").stop().animate({
                 scrollTop: 0
             }, 500);
-        }
     });
     //animation for scroll to map
     $("#scrollToMap").on("click", function () {
-        $("body").stop().animate({
+        $("html, body").stop().animate({
             scrollTop: 2000
         }, 1000);
     });
