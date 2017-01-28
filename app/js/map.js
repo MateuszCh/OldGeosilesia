@@ -56,7 +56,7 @@ function initMap() {
         {
             position: {lat:50.752308, lng:19.278467},
             title: 'Wirtualna ścieżka dydaktyczna Kamieniołom Kielniki, Geostanowiska',
-            place: 'Olsztyn, powiat częstochowski',
+            place: 'Olsztyn',
             www: 'http://geoportal.pgi.gov.pl/css/virtual/kielniki/sciezka.swf',
             category: 'sciezkiTematyczne'
         },
@@ -733,13 +733,6 @@ function initMap() {
             category: 'wybraneGeostanowiska'
         },
         {
-            position: {lat:49.643667, lng:19.055833},
-            title: 'Rezerwat przyrody Kuźnie na Górze Muronka',
-            place: 'Gmina Lipowa',
-            www: 'http://slaskie.travel/Poi/Pokaz/3849/1143/rezerwat-kuznie',
-            category: 'obszaryIObiektyChronione'
-        },
-        {
             position: {lat:49.747806, lng:19.304917},
             title: 'Stanowisko dokumentacyjne Zamczysko na Ściszków Groniu',
             place: 'Gmina Łękawica',
@@ -793,20 +786,6 @@ function initMap() {
             title: 'Brama Gwarków w Zbrosławicach, Geostanowisko',
             place: 'Gmina Zbrosławice',
             www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9106',
-            category: 'obiektyPrzemysloweIPoprzemyslowe'
-        },
-        {
-            position: {lat:50.411972, lng:19.277611},
-            title: 'Pozostałości dawnej eksploatacji rud Pb-Ag-Zn na Trzebiesławskiej Górze, Geostanowisko',
-            place: 'Dąbrowa Górnicza',
-            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=10172',
-            category: 'obiektyPrzemysloweIPoprzemyslowe'
-        },
-        {
-            position: {lat:50.215836, lng:18.496614},
-            title: 'Hałdy po kopalniach rudy żelaza w Stanicy-Górniki, Geostanowisko',
-            place: 'Gmina Pilchowice',
-            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9491',
             category: 'obiektyPrzemysloweIPoprzemyslowe'
         },
         {
@@ -1329,30 +1308,30 @@ function initMap() {
         },
         {
             position: {lat:49.666535, lng:19.075537},
-            title: 'Ścieżka przyrodnicza W Dolinie Zimnika Geostanowisko',
+            title: 'Ścieżka przyrodnicza W Dolinie Zimnika, Geostanowisko',
             place: 'Lipowa, Potok Zimnik',
             www: 'https://lipowaiokolice.blogspot.com/2013/04/sciezka-edukacyjna-dolina-zimnika.html',
             category: 'sciezkiTematyczne'
         },
         {
             position: {lat:50.438005, lng:19.669163},
-            title: 'Ścieżka przyrodnicza Dolina Wodąca Geostanowiska',
+            title: 'Ścieżka przyrodnicza Dolina Wodąca, Geostanowiska',
             place: 'Smoleń, Gmina Pilica',
-            www: '',
+            www: 'http://katowice.rdos.gov.pl/sciezki-przyrodnicze-na-obszarach-naturowych',
             category: 'sciezkiTematyczne'
         },
         {
             position: {lat:50.406216, lng:19.492848},
-            title: 'Ścieżka przyrodnicza po rezerwacie Góra Chełm',
+            title: 'Ścieżka przyrodnicza po rezerwacie Góra Chełm, Geostanowisko',
             place: 'Hutki-Kanki, Gmina Łazy',
-            www: '',
+            www: 'http://katowice.rdos.gov.pl/sciezki-przyrodnicze-na-obszarach-naturowych',
             category: 'sciezkiTematyczne'
         },
         {
             position: {lat:50.575312, lng:19.481701},
-            title: 'Ścieżka przyrodniczo-dydaktyczna Rzędkowice – Morsko Geostanowiska',
+            title: 'Ścieżka przyrodniczo-dydaktyczna Rzędkowice – Morsko, Geostanowiska',
             place: 'Rzędkowice, Gmina Włodowice',
-            www: '',
+            www: 'http://katowice.rdos.gov.pl/sciezki-przyrodnicze-na-obszarach-naturowych',
             category: 'sciezkiTematyczne'
         }
     ];
