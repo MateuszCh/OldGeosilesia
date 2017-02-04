@@ -1,3 +1,5 @@
+
+
 .bannerPhoto  {
   height: 100vh;
   background-image: url("../images/geosilesia.jpg");
@@ -7,6 +9,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  position: relative;
   @include mq-not-mobile  {
     background-position: center;
   }
@@ -42,6 +45,7 @@
     }
   }
 }
+
 .mapSection  {
   height: 100vh;
   text-align: center;
