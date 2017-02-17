@@ -8,7 +8,5 @@
   color: white;
   cursor: pointer;
   background-color: $header-color;
-  @include laptops  {
-    display: none;
-  }
+  display: none;
 }

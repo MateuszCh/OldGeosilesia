@@ -13,6 +13,7 @@
     //variables used to hide and show header on main page
     var sizeOfHeader = $("header").height();
     var previousSize = window.innerWidth;
+    var heightInner = window.innerHeight;
     //show image when fully loaded
     $(window).ready(function () {
         var gallery = $(".photos img");
@@ -72,6 +73,27 @@
                 $("header").slideDown(100);
             }
         }
+        //show and hide buttonUp element
+        if(window.innerWidth < 1200){
+            if($(window).scrollTop() > 20)  {
+                $("#buttonUp").show();
+            } else {
+                $("#buttonUp").hide();
+            }
+        }
+    });
+    //hover events on main page
+
+
+    $("#img1").on("mouseenter", function () {
+       $("#infoText1").addClass("show");
+    }).on("mouseleave", function () {
+       $("#infoText1").removeClass("show");
+    });
+    $("#img2").on("mouseenter", function () {
+        $("#infoText2").addClass("show");
+    }).on("mouseleave", function () {
+        $("#infoText2").removeClass("show");
     });
     //hamburger event listener
     menuHam.on("click", function () {
