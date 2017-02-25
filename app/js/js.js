@@ -13,7 +13,6 @@
     //variables used to hide and show header on main page
     var sizeOfHeader = $("header").height();
     var previousSize = window.innerWidth;
-    var heightInner = window.innerHeight;
     //show image when fully loaded
     $(window).ready(function () {
         var gallery = $(".photos img");
@@ -64,10 +63,10 @@
     //show and hide header on main page when map is visible
     $(window).on("scroll", function () {
         if(document.getElementById("map")){
-            var scrollTopOfMap  = $("#map")[0].scrollHeight;
+            var heightInner = window.innerHeight;
             var scrollTopWindow =   $(window).scrollTop();
-            var diff = scrollTopOfMap - sizeOfHeader;
-            if(scrollTopWindow > diff && scrollTopOfMap){
+            var diff = scrollTopWindow + sizeOfHeader;
+            if(heightInner < diff){
                 $("header").slideUp(500);
             } else {
                 $("header").slideDown(100);

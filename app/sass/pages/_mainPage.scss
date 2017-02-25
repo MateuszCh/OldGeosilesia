@@ -24,6 +24,18 @@
       padding: 1.25rem 1.25rem .625rem 1.25rem;
     }
 
+    span  {
+      p   {
+        font-family: inherit;
+        color: inherit;
+        margin: 0;
+        padding: 0;
+      }
+      @include mq-not-mobile  {
+        display: none;
+      }
+    }
+
     &:before  {
       width: 0;
       height: 0;

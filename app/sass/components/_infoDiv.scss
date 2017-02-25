@@ -1,11 +1,12 @@
 .infoDiv  {
   cursor: default;
   position: absolute;
-  display: flex;
+  display: none;
   align-items: center;
   right: 0;
   top: 15%;
   @include mq-not-mobile  {
+    display: flex;
     height: 80px;
     top: 150px;
   }
@@ -81,11 +82,12 @@
 .infoDiv2  {
   cursor: default;
   position: absolute;
-  display: flex;
+  display: none;
   align-items: center;
   right: 0;
-  top: 40%;
+  top: 41%;
   @include mq-not-mobile  {
+    display: flex;
     height: 80px;
     top: 250px;
   }

@@ -320,13 +320,6 @@ function initMap() {
             category: 'obiektyPrzemysloweIPoprzemyslowe'
         },
         {
-            position: {lat:50.273376, lng:18.860002},
-            title: 'Kolonia Robotnicza Ficinus w Rudzie Śl.',
-            place: 'Ruda Śląska,  ul. Kubiny',
-            www: 'http://www.ficinus.rudaslaska.pl/ ',
-            category: 'muzeaGeologiczneIDinoparki'
-        },
-        {
             position: {lat:50.290718, lng:18.674892},
             title: 'Muzeum Geologii Złóż Wydziału Górnictwa i Geologii Politechniki Śląskiej w Gliwicach',
             place: 'Gliwice, ul. Akademicka 2',
@@ -351,7 +344,7 @@ function initMap() {
             position: {lat:50.263505, lng:19.034892},
             title: 'Muzeum Śląskie na terenie dawnej KWK Katowice',
             place: 'Katowice, ul. Dobrowolskiego 1',
-            www: 'http://www.muzeumslaskie.pl/',
+            www: 'http://www.zabytkitechniki.pl/Poi/Pokaz/3657',
             category: 'obiektyPrzemysloweIPoprzemyslowe'
         },
         {
@@ -366,6 +359,20 @@ function initMap() {
             title: 'Gwarki tarnogórskie',
             place: 'Tarnowskie Góry',
             www: 'http://www.gwarki.tg.net.pl/',
+            category: 'inne'
+        },
+        {
+            position: {lat:50.300715, lng:18.786059},
+            title: 'Tydzień Ziemi w Zabrzu',
+            place: 'Zabrze, ul. 3 Maja 19',
+            www: 'http://www.muzeumgornictwa.pl/index.php',
+            category: 'inne'
+        },
+        {
+            position: {lat:50.268820, lng:19.143486},
+            title: 'Konkurs Geologiczny',
+            place: 'Sosnowiec, ul. Królowej Jadwigi 1',
+            www: 'https://www.pgi.gov.pl/sosnowiec/oddzial-gornoslaski.html',
             category: 'inne'
         },
         {
@@ -530,10 +537,10 @@ function initMap() {
             category: 'muzeaGeologiczneIDinoparki'
         },
         {
-            position: {lat:50.149949, lng:18.675424},
-            title: 'Zabytkowe osiedle patronackie KWK Dębińsko w Czerwionce-Leszczynach',
-            place: 'Czerwionka-Leszczyny, ul. Mickiewicza 10',
-            www: 'http://familoki.com.pl/',
+            position: {lat:50.292763, lng:18.665701},
+            title: 'Muzeum w Gliwicach, Zamek Piastowski',
+            place: 'Gliwice, ul. Pod Murami 2',
+            www: 'http://www.muzeum.gliwice.pl/',
             category: 'muzeaGeologiczneIDinoparki'
         },
         {
@@ -748,7 +755,7 @@ function initMap() {
         },
         {
             position: {lat:50.314102, lng:19.293742},
-            title: 'Stanowisko dokumentacyjne Srocza Góra w Dąbrowie Górniczej, Geostanowisko',
+            title: 'Stanowisko dokumentacyjne Srocza Góra w Dąbrowie Górniczej',
             place: 'Dąbrowa Górnicza, ul. Strzemieszycka',
             www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9221',
             category: 'wybraneGeostanowiska'
@@ -789,6 +796,20 @@ function initMap() {
             category: 'obiektyPrzemysloweIPoprzemyslowe'
         },
         {
+            position: {lat:50.415361, lng:18.855611},
+            title: 'Hałda popłuczkowa w Tarnowskich Górach, Geostanowisko',
+            place: 'Tarnowskie Góry, ul. Długa',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=1623',
+            category: 'obiektyPrzemysloweIPoprzemyslowe'
+        },
+        {
+            position: {lat:49.652930, lng:19.118180},
+            title: 'Wapiennik w Radziechowach',
+            place: 'Radziechowy - Wieprz, ul. Lipowa',
+            www: 'http://www.zywiecczyzna.pl/radziechowy/szczegoly.php?953',
+            category: 'obiektyPrzemysloweIPoprzemyslowe'
+        },
+        {
             position: {lat:50.798056, lng:18.649722},
             title: 'Pozostałości po eksploatacji rud żelaza - Zborowskie i Panoszów',
             place: 'Gmina Ciasna',
@@ -797,7 +818,7 @@ function initMap() {
         },
         {
             position: {lat:50.062383 , lng:18.467683},
-            title: 'Zabytkowa KWK Ignacy w Rybniku Geostanowisko',
+            title: 'Zabytkowa KWK Ignacy w Rybniku, Geostanowisko',
             place: 'Rybnik, ul. Mościckiego 3',
             www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9831',
             category: 'obiektyPrzemysloweIPoprzemyslowe'
@@ -834,7 +855,7 @@ function initMap() {
             position: {lat:50.285453, lng:18.919147},
             title: 'Wieże dawnej KWK Polska w Świętochłowicach',
             place: 'Świętochłowice, ul. Wojska Polskiego 16D',
-            www: 'http://www.gornyslask.net.pl/t/swietochlowice-wieze-kopalni-polska/',
+            www: 'http://www.zabytkitechniki.pl/Poi/Pokaz/176470',
             category: 'obiektyPrzemysloweIPoprzemyslowe'
         },
         {
@@ -890,7 +911,7 @@ function initMap() {
             position: {lat:50.679485, lng:19.212217},
             title: 'Izba Pamięci Gminy Poraj',
             place: 'Poraj, ul. Piłsudskiego 14',
-            www: 'www.gokporaj.pl',
+            www: 'http://www.gokporaj.pl/izba-pamieci-gminy-poraj/',
             category: 'muzeaGeologiczneIDinoparki'
         },
         {
@@ -1244,7 +1265,7 @@ function initMap() {
             category: 'wybraneGeostanowiska'
         },
         {
-            position: {lat:50.421672, lng:.621708},
+            position: {lat:50.421672, lng:19.621708},
             title: 'Ostańce skalne Ruskie Góry w Ryczowie',
             place: 'Gmina Ogrodzieniec',
             www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9714',
@@ -1331,6 +1352,69 @@ function initMap() {
             position: {lat:50.575312, lng:19.481701},
             title: 'Ścieżka przyrodniczo-dydaktyczna Rzędkowice – Morsko, Geostanowiska',
             place: 'Rzędkowice, Gmina Włodowice',
+            www: 'http://katowice.rdos.gov.pl/sciezki-przyrodnicze-na-obszarach-naturowych',
+            category: 'sciezkiTematyczne'
+        },
+        {
+            position: {lat:49.732253, lng:19.288816},
+            title: 'Przyrodnicza ścieżka dydaktyczna Osobliwości przyrody nieożywionej Beskidu Małego - Start',
+            place: 'Okrajnik (Gmina Łękawica)',
+            www: 'http://katowice.rdos.gov.pl/sciezki-przyrodnicze-na-obszarach-naturowych',
+            category: 'sciezkiTematyczne'
+        },
+        {
+            position: {lat:49.734808, lng:19.418135 },
+            title: 'Przyrodnicza ścieżka dydaktyczna Osobliwości przyrody nieożywionej Beskidu Małego - Meta',
+            place: 'Las (Gmina Slemień)',
+            www: 'http://katowice.rdos.gov.pl/sciezki-przyrodnicze-na-obszarach-naturowych',
+            category: 'sciezkiTematyczne'
+        },
+        {
+            position: {lat:50.772921, lng:19.240594},
+            title: 'Ścieżka edukacyjno-leśna Zielona Góra, Geostanowisko',
+            place: 'Kusięta, Gmina Olsztyn',
+            www: 'http://katowice.rdos.gov.pl/sciezki-przyrodnicze-na-obszarach-naturowych',
+            category: 'sciezkiTematyczne'
+        },
+        {
+            position: {lat:49.687886, lng:19.201819},
+            title: 'Ścieżka przyrodnicza Wzgórze Grojec, Geostanowiska - Start',
+            place: 'Żywiec, ul. Zamkowa ',
+            www: 'http://katowice.rdos.gov.pl/sciezki-przyrodnicze-na-obszarach-naturowych',
+            category: 'sciezkiTematyczne'
+        },
+        {
+            position: {lat:49.661784, lng:19.174296},
+            title: 'Ścieżka przyrodnicza Wzgórze Grojec, Geostanowiska - Meta',
+            place: 'Żywiec, ul. Browarna',
+            www: 'http://katowice.rdos.gov.pl/sciezki-przyrodnicze-na-obszarach-naturowych',
+            category: 'sciezkiTematyczne'
+        },
+        {
+            position: {lat:49.719383, lng:18.812029},
+            title: 'Szlak Źródlany w Ustroniu, Geostanowiska',
+            place: 'Ustroń Rynek – Źródło Żelaziste – Źródło Karola',
+            www: 'http://www.beskidslaski.pl/Ustron/szlakispacer.html',
+            category: 'sciezkiTematyczne'
+        },
+        {
+            position: {lat:50.702943, lng:19.431732},
+            title: 'Ścieżka dydaktyczna po rezerwacie Parkowe, Geostanowiska',
+            place: 'przy drodze Złoty Potok – Żarki',
+            www: 'http://katowice.rdos.gov.pl/sciezki-przyrodnicze-na-obszarach-naturowych',
+            category: 'sciezkiTematyczne'
+        },
+        {
+            position: {lat:50.730878, lng:19.264925},
+            title: 'Ścieżka dydaktyczna po rezerwacie Sokole Góry, Geostanowiska - Start',
+            place: 'Olsztyn',
+            www: 'http://katowice.rdos.gov.pl/sciezki-przyrodnicze-na-obszarach-naturowych',
+            category: 'sciezkiTematyczne'
+        },
+        {
+            position: {lat:50.750442, lng:19.272888},
+            title: 'Ścieżka dydaktyczna po rezerwacie Sokole Góry, Geostanowiska - Meta ',
+            place: 'Olsztyn',
             www: 'http://katowice.rdos.gov.pl/sciezki-przyrodnicze-na-obszarach-naturowych',
             category: 'sciezkiTematyczne'
         }
