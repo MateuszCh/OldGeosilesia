@@ -89,6 +89,13 @@ function initMap() {
             category: 'obiektyPrzemysloweIPoprzemyslowe'
         },
         {
+            position: {lat:50.308744, lng:18.783928},
+            title: 'Sztolnia Królowa Luiza w Zabrzu – wylot Głównej Kluczowej Sztolni Dziedzicznej (w budowie)',
+            place: 'Zabrze, ul. Miarki 8',
+            www: 'http://muzeumgornictwa.pl/index.php/galeria/132-arch/928-sztolniatemp-2',
+            category: 'obiektyPrzemysloweIPoprzemyslowe'
+        },
+        {
             position: {lat:50.425519, lng:18.849568},
             title: 'Zabytkowa Kopalnia Srebra w Tarnowskich Górach, Geostanowisko',
             place: 'Tarnowskie Góry, ul. Szczęść Boże 81',
@@ -111,7 +118,14 @@ function initMap() {
         },
         {
             position: {lat:50.427044, lng:18.807134},
-            title: 'Sztolnia Czarnego Pstrąga w Tarnowskich Górach, Geostanowisko',
+            title: 'Sztolnia Czarnego Pstrąga w Tarnowskich Górach – Szyb Sylwester, Geostanowisko',
+            place: 'Tarnowskie Góry, ul. Śniadeckiego / Repecka',
+            www: 'http://www.kopalniasrebra.pl/sztolnia/sztolnia.php',
+            category: 'trasyPodziemne'
+        },
+        {
+            position: {lat:50.429977, lng:18.799869},
+            title: 'Sztolnia Czarnego Pstrąga w Tarnowskich Górach – Szyb Ewa, Geostanowisko',
             place: 'Tarnowskie Góry, ul. Śniadeckiego / Repecka',
             www: 'http://www.kopalniasrebra.pl/sztolnia/sztolnia.php',
             category: 'trasyPodziemne'
