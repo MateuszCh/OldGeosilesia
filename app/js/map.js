@@ -76,14 +76,14 @@ function initMap() {
         },
         {
             position: {lat:50.296432, lng:18.798901},
-            title: 'Sztolnia Królowa Luiza w Zabrzu – Strefa podziemna, Geostanowisko',
+            title: 'Sztolnia Królowa Luiza w Zabrzu – Strefa podziemna, Geostanowisko międzynarodowe',
             place: 'Zabrze, ul. Sienkiewicza 43 (wjazd od ul. Mochnackiego)',
             www: 'http://www.sztolnialuiza.pl/index.php/park-12c-1',
             category: 'trasyPodziemne'
         },
         {
             position: {lat:50.296689, lng:18.806437},
-            title: 'Sztolnia Królowa Luiza w Zabrzu – Strefa naziemna (Szyb Carnall), Geostanowisko',
+            title: 'Sztolnia Królowa Luiza w Zabrzu – Strefa naziemna (Szyb Carnall), Geostanowisko międzynarodowe',
             place: 'Zabrze, ul. Wolności 410',
             www: 'http://sztolnialuiza.pl/index.php/szyb-carnall2',
             category: 'obiektyPrzemysloweIPoprzemyslowe'
@@ -97,21 +97,21 @@ function initMap() {
         },
         {
             position: {lat:50.425519, lng:18.849568},
-            title: 'Zabytkowa Kopalnia Srebra w Tarnowskich Górach, Geostanowisko',
+            title: 'Zabytkowa Kopalnia Srebra w Tarnowskich Górach, Geostanowisko międzynarodowe',
             place: 'Tarnowskie Góry, ul. Szczęść Boże 81',
             www: 'http://www.kopalniasrebra.pl/kopalnia/kopalnia.php',
             category: 'trasyPodziemne'
         },
         {
             position: {lat:50.289459, lng:18.791420},
-            title: 'Kopalnia Guido w Zabrzu, Geostanowisko',
+            title: 'Kopalnia Guido w Zabrzu, Geostanowisko międzynarodowe',
             place: 'Zabrze, 3 Maja 93',
             www: 'https://kopalniaguido.pl/index.php/pl-pl/',
             category: 'trasyPodziemne'
         },
         {
             position: {lat:50.314952, lng:18.741490},
-            title: 'Szyb „Maciej” w Zabrzu',
+            title: 'Szyb „Maciej” w Zabrzu, Geostanowisko',
             place: 'Zabrze, ul. Srebrna 6',
             www: 'http://www.szybmaciej.pl/',
             category: 'obiektyPrzemysloweIPoprzemyslowe'
@@ -237,7 +237,7 @@ function initMap() {
         },
         {
             position: {lat:49.720208, lng:18.825733},
-            title: 'Uzdrowisko Ustroń – źródło Karola, pijalnia wód i fontanna solankowa, Geostanowisko',
+            title: 'Uzdrowisko Ustroń (pijalnia wód, fontanna solankowa i kopalnia solanki)',
             place: 'Ustroń, ul. Sanatoryjna',
             www: 'http://www.uzdrowisko-ustron.pl/O-uzdrowisku/Atrakcje-Uzdrowiska-i-okolicy.html',
             category: 'uzdrowiskaIObiektyUzdrowiskowe'
@@ -321,7 +321,7 @@ function initMap() {
         },
         {
             position: {lat:50.297939, lng:18.967105},
-            title: 'Szyb Prezydent w Chorzowie',
+            title: 'Kompleks Sztygarka z Szybem Prezydent w Chorzowie',
             place: 'Chorzów, ul. Piotra Skargi 34 a-d',
             www: 'http://sztygarka.pl/',
             category: 'obiektyPrzemysloweIPoprzemyslowe'
@@ -558,6 +558,20 @@ function initMap() {
             category: 'muzeaGeologiczneIDinoparki'
         },
         {
+            position: {lat:50.377133, lng:18.907485},
+            title: 'Mini skansen górniczy w Radzionkowie',
+            place: 'Radzionków, ul. Nałkowskiej 46',
+            www: 'http://www.gornyslask.net.pl/t/radzionkow-mini-skansen-gorniczy/',
+            category: 'muzeaGeologiczneIDinoparki'
+        },
+        {
+            position: {lat:50.062383 , lng:18.467683},
+            title: '26	Wirtualna Izba Pamięci Zlikwidowanych Kopalń ROW',
+            place: 'Rybnik, ul. Mościckiego 3',
+            www: 'https://fkzrow.pl/',
+            category: 'muzeaGeologiczneIDinoparki'
+        },
+        {
             position: {lat:49.801683, lng:18.872416},
             title: 'Dajka lamprofirowa w nieczynnym kamieniołomie Goruszka w Grodźcu',
             place: 'Gmina Jasienica',
@@ -727,10 +741,10 @@ function initMap() {
         },
         {
             position: {lat:50.412421, lng:18.875813},
-            title: 'Ślady eksploatacji żeleźniaka brunatnego i galmanów na Górze Cipiorg w Tarnowskich Górach i Bytomiu',
+            title: 'Ślady eksploatacji żeleźniaka brunatnego i galmanów na Górze Cipiorg w Tarnowskich Górach i Bytomiu, Geostanowisko',
             place: 'Tarnowskie Góry - Bytom',
             www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9635',
-            category: 'wybraneGeostanowiska'
+            category: 'obiektyPrzemysloweIPoprzemyslowe'
         },
         {
             position: {lat:50.615278, lng:19.381667},
@@ -796,6 +810,13 @@ function initMap() {
             category: 'obszaryIObiektyChronione'
         },
         {
+            position: {lat:50.701694, lng:19.355250},
+            title: 'Pustynia Siedlecka',
+            place: 'Gmina Janów',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=107',
+            category: 'obszaryIObiektyChronione'
+        },
+        {
             position: {lat:50.675092, lng:19.415461},
             title: 'Stanowisko dokumentacyjne Jaskinia Wiercica w Ostrężniku',
             place: 'Gmina Niegowa',
@@ -824,11 +845,59 @@ function initMap() {
             category: 'obiektyPrzemysloweIPoprzemyslowe'
         },
         {
+            position: {lat:50.141030, lng:18.855557},
+            title: 'Hałda stożkowa Skalny przy  KWK „Bolesław Śmiały”',
+            place: 'Łaziska Górne',
+            www: 'https://pl.wikipedia.org/wiki/Ha%C5%82da_Skalny',
+            category: 'obiektyPrzemysloweIPoprzemyslowe'
+        },
+        {
+            position: {lat:50.518028, lng:19.428889},
+            title: 'Hałda po eksploatacji rudy żelaza w Rudnikach, Geostanowisko',
+            place: 'Gmina Włodowice',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=1790',
+            category: 'obiektyPrzemysloweIPoprzemyslowe'
+        },
+        {
+            position: {lat:50.769394, lng:19.065094},
+            title: 'Hałda po eksploatacji rudy żelaza w Dźbowie, Geostanowisko',
+            place: 'Częstochowa',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9499',
+            category: 'obiektyPrzemysloweIPoprzemyslowe'
+        },
+        {
+            position: {lat:50.733486, lng:19.154336},
+            title: 'Hałda po eksploatacji rudy żelaza w Nowej Wsi, Geostanowisko',
+            place: 'Gmina Poczesna',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9502',
+            category: 'obiektyPrzemysloweIPoprzemyslowe'
+        },
+        {
+            position: {lat:50.858833, lng:18.870639},
+            title: 'Hałda po eksploatacji rudy żelaza w Golcach, Geostanowisko',
+            place: 'Gmina Wręczyca Wielka',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9576',
+            category: 'obiektyPrzemysloweIPoprzemyslowe'
+        },{
+            position: {lat:50.699047, lng:18.896678},
+            title: 'Hałdy i wyrobiska po eksploatacji syderytów w Zumpach, Geostanowisko',
+            place: 'Gmina Boronów',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9427',
+            category: 'obiektyPrzemysloweIPoprzemyslowe'
+        },
+        {
+            position: {lat:50.256958, lng:18.547761},
+            title: 'Hałdy po eksploatacji syderytów w Sośnicowicach, Geostanowiska',
+            place: 'Gmina Sośnicowice',
+            www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9573',
+            category: 'obiektyPrzemysloweIPoprzemyslowe'
+        },
+        {
             position: {lat:50.798056, lng:18.649722},
             title: 'Pozostałości po eksploatacji rud żelaza - Zborowskie i Panoszów',
             place: 'Gmina Ciasna',
             www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=648',
-            category: 'wybraneGeostanowiska'
+            category: 'obiektyPrzemysloweIPoprzemyslowe'
         },
         {
             position: {lat:50.062383 , lng:18.467683},
@@ -853,10 +922,10 @@ function initMap() {
         },
         {
             position: {lat:50.475417, lng:19.334453},
-            title: 'Wyrobiska po eksploatacji węgla brunatnego w Porębie',
+            title: 'Wyrobiska po eksploatacji węgla brunatnego w Porębie, Geostanowisko',
             place: 'Gmina Poręba',
             www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9487',
-            category: 'wybraneGeostanowiska'
+            category: 'obiektyPrzemysloweIPoprzemyslowe'
         },
         {
             position: {lat:50.071542, lng:18.711033},
@@ -881,7 +950,7 @@ function initMap() {
         },
         {
             position: {lat:50.428753, lng:18.771628},
-            title: 'Śladami dawnego górnictwa Tarnowskich Gór',
+            title: 'Ścieżka rowerowa Śladami dawnego górnictwa Tarnowskich Gór, Geostanowiska',
             place: 'Tarnowskie Góry',
             www: 'http://rowerempotg.blogspot.com/2010/04/trasa-numer-1-sladami-dawnego-gornictwa.html',
             category: 'sciezkiTematyczne'
@@ -1105,14 +1174,14 @@ function initMap() {
         },
         {
             position: {lat:50.789444, lng:19.050056},
-            title: 'Glinianka iłów środkowojurajskich Leszczynski w Czestochowie-Kawodrzy Górnej',
+            title: 'Glinianka iłów środkowojurajskich Leszczyński w Czestochowie',
             place: 'Częstochowa, ul. 10 Zakładników',
             www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9217',
             category: 'wybraneGeostanowiska'
         },
         {
             position: {lat:50.756694, lng:19.147472},
-            title: 'Nieczynny kamieniołom wapieni środkowo- i górnojuraskich we Wrzosowej',
+            title: 'Kamieniołom wapieni środkowo- i górnojurajskich we Wrzosowej (nieczynny)',
             place: 'Gmina Poczesna',
             www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9374',
             category: 'wybraneGeostanowiska'
@@ -1210,10 +1279,10 @@ function initMap() {
         },
         {
             position: {lat:50.411972, lng:19.277611},
-            title: 'Pozostałości dawnej eksploatacji rud Pb-Ag-Zn na Trzebiesławskiej Górze',
+            title: 'Pozostałości dawnej eksploatacji rud Pb-Ag-Zn na Trzebiesławskiej Górze, Geostanowisko',
             place: 'Dąbrowa Górnicza - Ujejsce',
             www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=10172',
-            category: 'wybraneGeostanowiska'
+            category: 'obiektyPrzemysloweIPoprzemyslowe'
         },
         {
             position: {lat:50.206184, lng:18.386197},
@@ -1266,10 +1335,10 @@ function initMap() {
         },
         {
             position: {lat:50.215836, lng:18.496614},
-            title: 'Hałdy po kopalniach rudy żelaza w Stanicy-Górniki',
+            title: 'Hałdy po kopalniach rudy żelaza w Stanicy-Górniki, Geostanowisko',
             place: 'Gmina Pilchowice',
             www: 'http://geostanowiska.pgi.gov.pl/gsapp_v2/ObjectDetails.aspx?id=9491',
-            category: 'wybraneGeostanowiska'
+            category: 'obiektyPrzemysloweIPoprzemyslowe'
         },
         {
             position: {lat:50.572833, lng:19.530167},
@@ -1371,14 +1440,14 @@ function initMap() {
         },
         {
             position: {lat:49.732253, lng:19.288816},
-            title: 'Przyrodnicza ścieżka dydaktyczna Osobliwości przyrody nieożywionej Beskidu Małego - Start',
+            title: 'Przyrodnicza ścieżka dydaktyczna Osobliwości przyrody nieożywionej Beskidu Małego - Start, Geostanowiska',
             place: 'Okrajnik (Gmina Łękawica)',
             www: 'http://katowice.rdos.gov.pl/sciezki-przyrodnicze-na-obszarach-naturowych',
             category: 'sciezkiTematyczne'
         },
         {
             position: {lat:49.734808, lng:19.418135 },
-            title: 'Przyrodnicza ścieżka dydaktyczna Osobliwości przyrody nieożywionej Beskidu Małego - Meta',
+            title: 'Przyrodnicza ścieżka dydaktyczna Osobliwości przyrody nieożywionej Beskidu Małego - Meta, Geostanowiska',
             place: 'Las (Gmina Slemień)',
             www: 'http://katowice.rdos.gov.pl/sciezki-przyrodnicze-na-obszarach-naturowych',
             category: 'sciezkiTematyczne'
@@ -1674,7 +1743,7 @@ function initMap() {
         });
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
             return function() {
-                infowindow.setContent("<div class='markerDeskription'><p>" + obiekty[i].title + "</p><p>" + obiekty[i].place + "</p><a href=" + obiekty[i].www + ">Więcej</a></div>");
+                infowindow.setContent("<div class='markerDeskription'><p>" + obiekty[i].title + "</p><p>" + obiekty[i].place + "</p><a href=" + obiekty[i].www + " target='_blank'>Więcej</a></div>");
                 infowindow.open(map, marker);
             }
         })(marker, i));
